@@ -1,4 +1,4 @@
-/* Collaborators:
+package com.music.animator;/* Collaborators:
 * Daniel Levene
 * Damian Suski
 * Mauricio Mendez
