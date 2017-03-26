@@ -3,7 +3,7 @@ package com.music.animator;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
-import java.io.File;
+import java.net.URL;
 
 /**
  * Created by Marcy on 3/26/2017.
@@ -15,13 +15,19 @@ public class MusicPlayer {
     private static Clip _clip;
     private static boolean _clipLoaded;
 
-    public void play(String fileName) {
+    public static void play(String fileName) {
 
         if ( _clipLoaded == false) {
             try {
-                AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(fileName).getAbsoluteFile());
+               // AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(url.getPath()));
+
+                URL url = MusicPlayer.class.getResource(fileName);
+                System.out.println("Url:" + url );
+                 AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(url);
+                System.out.println("read file");
                 _clip = AudioSystem.getClip();
                 _clip.open(audioInputStream);
+               // _clip.loop(10);
                 _clip.start();
                 _clipLoaded = true;
             } catch (Exception ex) {
@@ -34,7 +40,7 @@ public class MusicPlayer {
         }
     }
 
-    public void pause() {
+    public static void pause() {
         _clipTime= _clip.getMicrosecondPosition();
         _clip.stop();
     }
