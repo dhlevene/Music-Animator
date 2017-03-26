@@ -20,7 +20,7 @@ public class MainScreen extends JPanel implements ActionListener{
         timer.start();
     }
 
-    /*Takes care of all the rendering, necessary for drawing the animations*/
+    /*Takes care of all the rendering, necessary for drawing animations*/
     public void paint(Graphics graphics){
         super.paint(graphics);
 
