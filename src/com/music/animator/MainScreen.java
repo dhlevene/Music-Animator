@@ -11,9 +11,19 @@ import java.awt.event.ActionListener;
 public class MainScreen extends JPanel implements ActionListener{
 
     Timer timer = new Timer(10,this);
+    private JButton startAnimationButton;
+    private JButton selectDancerButton;
+    private JButton selectAudioButton;
+    private JButton uploadAudioButton;
+    private JPanel screen;
+    private JPanel left;
+    private JPanel right;
 
     public MainScreen(){
         /*Makes sure that we can click on the panel*/
+        left = new JPanel();
+        add(left);
+        left.add(startAnimationButton);
         setFocusable(true);
         requestFocus();
 
@@ -28,7 +38,9 @@ public class MainScreen extends JPanel implements ActionListener{
         graphics.setColor(Color.BLACK);
         graphics.fillRect(0,0,800,600);
         graphics.setColor(Color.WHITE);
-        graphics.drawString("What is up homies?",50,50);
+        graphics.drawString(" ANIMATION DANCER  ",325,50);
+        graphics.drawString("Please Select Dancer ",100,200);
+        graphics.drawString("Please Select or Upload Audio ",500,200);
     }
 
     /*Called every time the timer executes (every 10 millis)*/
