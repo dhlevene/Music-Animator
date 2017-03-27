@@ -21,6 +21,8 @@ public class MainScreen extends JPanel implements ActionListener{
     private JButton selectDancerButton;
     private JButton selectAudioButton;
     private JButton uploadAudioButton;
+    private JButton humanDancer;
+    private JButton animalDancer;
     private JLabel animatedMusicDancer;
     private JLabel dancer;
     private JLabel audio;
@@ -33,6 +35,8 @@ public class MainScreen extends JPanel implements ActionListener{
         left.add(dancer);
 
         bottom.add(startAnimationButton);
+        left.add(humanDancer);
+        left.add(animalDancer);
         left.add(selectDancerButton);
         right.add(selectAudioButton);
         right.add(uploadAudioButton);
@@ -81,21 +85,23 @@ public class MainScreen extends JPanel implements ActionListener{
 
         startAnimationButton = new JButton("Start Animation");
         selectDancerButton = new JButton("Select Dancer");
+        humanDancer = new JButton("     TRUMP     ");
+        animalDancer = new JButton("HARAMBE");
         selectAudioButton = new JButton("Select Song");
-            uploadAudioButton = new JButton("Upload Audio");
+        uploadAudioButton = new JButton("Upload Audio");
 
-        selectDancerButton.addActionListener(new ActionListener() {
+        startAnimationButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //this.add(new DancerSelection());
                 remove(mainPanel);
-                add(new DancerSelection());
+                add(new animationScreen());
                 validate();
             }
         });
-        startAnimationButton.addActionListener(this);
-        selectAudioButton.addActionListener(this);
-        uploadAudioButton.addActionListener(this);
+        //selectDancerButton.addActionListener(this);
+        //selectAudioButton.addActionListener(this);
+        //uploadAudioButton.addActionListener(this);
 
         animatedMusicDancer = new JLabel("Animated Music Dancer");
         dancer = new JLabel("Please select a Dancer for the animation");
