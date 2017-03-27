@@ -27,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/music/animator/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -36,7 +36,7 @@
       <file leaf-file-name="Container.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/awt/Container.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="-2543">
               <caret line="972" column="0" lean-forward="false" selection-start-line="972" selection-start-column="0" selection-end-line="972" selection-end-column="0" />
               <folding>
                 <element signature="e#37612#37613#0" expanded="true" />
@@ -58,10 +58,86 @@
       <file leaf-file-name="MainScreen.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/music/animator/MainScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="40" column="10" lean-forward="false" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+            <state relative-caret-position="50">
+              <caret line="83" column="55" lean-forward="true" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4100#4101#0" expanded="true" />
+                <element signature="e#4125#4126#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Timer.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/javax/swing/Timer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="312" column="0" lean-forward="false" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DancerSelection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/music/animator/DancerSelection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1892">
+              <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2002">
+              <caret line="181" column="22" lean-forward="false" selection-start-line="181" selection-start-column="22" selection-end-line="181" selection-end-column="22" />
+              <folding>
+                <marker date="1490575847596" expanded="true" signature="62796:62813" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="62796:62831" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="62796:62844" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="62796:62859" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="62894:65312" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="62907:65297" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="62961:63256" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="62980:63241" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="63043:63221" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="63083:63187" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="63104:63165" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="63306:63633" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="63325:63618" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="63420:63598" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="63460:63564" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="63481:63542" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="63684:63949" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="63703:63934" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="63736:63914" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="63776:63880" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="63797:63858" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="63992:64257" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="64011:64242" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="64044:64222" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="64084:64188" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="64105:64166" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="64308:64625" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="64327:64610" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="64412:64590" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="64452:64556" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="64473:64534" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="64660:64966" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="64679:64951" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="64753:64931" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="64793:64897" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="64814:64875" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="65018:65283" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="65037:65268" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="65070:65248" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="65110:65214" ph="..." />
+                <marker date="1490575847596" expanded="true" signature="65131:65192" ph="..." />
               </folding>
             </state>
           </provider>
@@ -98,6 +174,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>git</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -121,6 +202,8 @@
         <option value="$PROJECT_DIR$/src/com/music/animator/wqkjhf.form" />
         <option value="$PROJECT_DIR$/src/com/music/animator/Main.java" />
         <option value="$PROJECT_DIR$/src/com/music/animator/MainScreen.form" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/com/music/animator/DancerSelection.java" />
         <option value="$PROJECT_DIR$/src/com/music/animator/MainScreen.java" />
       </list>
     </option>
@@ -696,11 +779,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490555513436</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Has the set up of the Main Screen GUI">
+      <created>1490560941006</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1490560941006</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21844000" />
+    <option name="totallyTimeSpent" value="31587000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -754,7 +844,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commiting to commit Branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="commiting to commit Branch" />
+    <MESSAGE value="Has the set up of the Main Screen GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Has the set up of the Main Screen GUI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -779,6 +870,8 @@
           <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4100#4101#0" expanded="true" />
+            <element signature="e#4125#4126#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -797,6 +890,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4100#4101#0" expanded="true" />
+            <element signature="e#4125#4126#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -815,6 +910,8 @@
           <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4100#4101#0" expanded="true" />
+            <element signature="e#4125#4126#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -825,6 +922,8 @@
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4100#4101#0" expanded="true" />
+            <element signature="e#4125#4126#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -918,32 +1017,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Music Animator.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/music/animator/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/awt/Container.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="972" column="0" lean-forward="false" selection-start-line="972" selection-start-column="0" selection-end-line="972" selection-end-column="0" />
-          <folding>
-            <element signature="e#37612#37613#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/javax/swing/BoxLayout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
@@ -954,12 +1027,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/music/animator/MainScreen.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="40" column="10" lean-forward="false" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+        <state relative-caret-position="2002">
+          <caret line="181" column="22" lean-forward="false" selection-start-line="181" selection-start-column="22" selection-end-line="181" selection-end-column="22" />
+          <folding>
+            <marker date="1490575847596" expanded="true" signature="62796:62813" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="62796:62831" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="62796:62844" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="62796:62859" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="62894:65312" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="62907:65297" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="62961:63256" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="62980:63241" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="63043:63221" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="63083:63187" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="63104:63165" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="63306:63633" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="63325:63618" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="63420:63598" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="63460:63564" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="63481:63542" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="63684:63949" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="63703:63934" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="63736:63914" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="63776:63880" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="63797:63858" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="63992:64257" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="64011:64242" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="64044:64222" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="64084:64188" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="64105:64166" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="64308:64625" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="64327:64610" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="64412:64590" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="64452:64556" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="64473:64534" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="64660:64966" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="64679:64951" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="64753:64931" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="64793:64897" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="64814:64875" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="65018:65283" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="65037:65268" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="65070:65248" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="65110:65214" ph="..." />
+            <marker date="1490575847596" expanded="true" signature="65131:65192" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/awt/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2543">
+          <caret line="972" column="0" lean-forward="false" selection-start-line="972" selection-start-column="0" selection-end-line="972" selection-end-column="0" />
+          <folding>
+            <element signature="e#37612#37613#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/music/animator/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/javax/swing/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="312" column="0" lean-forward="false" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/music/animator/DancerSelection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1892">
+          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Music Animator.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/music/animator/MainScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="83" column="55" lean-forward="true" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4100#4101#0" expanded="true" />
+            <element signature="e#4125#4126#0" expanded="true" />
           </folding>
         </state>
       </provider>
