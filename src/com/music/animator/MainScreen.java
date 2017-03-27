@@ -85,8 +85,8 @@ public class MainScreen extends JPanel implements ActionListener{
 
         startAnimationButton = new JButton("Start Animation");
         selectDancerButton = new JButton("Select Dancer");
-        humanDancer = new JButton("     TRUMP     ");
-        animalDancer = new JButton("HARAMBE");
+        humanDancer = new JButton("     TRUMP     "); // This Button Should contain the image of the Dancer
+        animalDancer = new JButton("HARAMBE");        //This button should contain the image of the Dancer
         selectAudioButton = new JButton("Select Song");
         uploadAudioButton = new JButton("Upload Audio");
 
@@ -112,11 +112,6 @@ public class MainScreen extends JPanel implements ActionListener{
     public void paint(Graphics graphics){
         super.paint(graphics);
 
-        /*Paints a black rectangle over the whole window*/
-        graphics.setColor(Color.BLACK);
-        graphics.fillRect(0,0,800,600);
-        graphics.setColor(Color.WHITE);
-        graphics.drawString("What is up homies?",50,50);
     }
 
 
