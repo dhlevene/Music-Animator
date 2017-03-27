@@ -113,12 +113,10 @@ public class MainScreen extends JPanel implements ActionListener{
         super.paint(graphics);
 
         /*Paints a black rectangle over the whole window*/
-       // graphics.setColor(Color.BLACK);
-       // graphics.fillRect(0,0,800,600);
-       // graphics.setColor(Color.WHITE);
-       // graphics.drawString(" ANIMATION DANCER  ",325,50);
-       // graphics.drawString("Please Select Dancer ",100,200);
-       // graphics.drawString("Please Select or Upload Audio ",500,200);
+        graphics.setColor(Color.BLACK);
+        graphics.fillRect(0,0,800,600);
+        graphics.setColor(Color.WHITE);
+        graphics.drawString("What is up homies?",50,50);
     }
 
 
