@@ -13,29 +13,21 @@ import java.util.ArrayList;
  */
 public class ImageLoader {
 
-    // constructor going to initialize chracter Folder Trump and Folder Harambe
-    // youre gonna already know the folder location 1 for each character
-    // the folders are gonna have subfolder
-    // make an animation loop object -- in that animation loop obj gonna store
-    // how many frames in that animation  and how many frames in the image
-
-    // in loader have 3 seperate lists gonna contain all the loops - slow medium and fast
-    //load all those into memory, getSlow medium and return an Animation list object
-    // the actual return type is gonna be animation loop
-
     // Trump = 0, Harambe = 1
     public static final int TRUMP = 0;
     public static final int HARAMBE = 1;
+    private int _character;
 
+    /*For testing purposes use the SPEEDS[] with only "Slow/"
+    * until we get all the Speed Files for either character
+    * */
     public static final String[] SPEEDS = {"Slow/"};
     //public static final String[] SPEEDS = {"Slow/", "Medium/", "Fast/"};
-
-    private int _character;
 
     private ArrayList<AnimationLoop> _slow;
     private ArrayList<AnimationLoop> _medium;
     private ArrayList<AnimationLoop> _fast;
-    private static String _fileName = "Animations/";
+    private static String _fileName = "src/com/music/animator/Animations/";
 
     public ImageLoader(int characterSelected) {
         _character = characterSelected;
@@ -44,22 +36,22 @@ public class ImageLoader {
         _fast = new ArrayList<AnimationLoop>();
 
         if (_character == TRUMP) {
-            _fileName =_fileName + "Trump";
-
+            _fileName =_fileName + "Trump/";
+            traverseFile(_fileName);
         } else if (_character == HARAMBE){
             _fileName =_fileName + "Harambe/";
             traverseFile(_fileName);
         } else {
             System.out.println("Invalid character selection.");
         }
-
+        verification();
     }
 
     public void traverseFile(String path) {
         String directory = path;
 
         for (int i=0; i < SPEEDS.length; i++) {
-            ArrayList<AnimationLoop>  list;
+            ArrayList<AnimationLoop>  list = null;
 
             if (i == 0)
                list = _slow;
@@ -75,67 +67,53 @@ public class ImageLoader {
             file = new File(filePath);
             System.out.println("filepath:" + filePath);
 
-            if (file != null) {
-                System.out.println("speed file " + file);
-                if (file.isDirectory()) {
-                    System.out.println("file is directory ");
-
-                }
-            } else {
-                System.out.println("null");
-
-            }
-
-
-            String filePathINVALID = "C:\\Users\\Marcy\\IdeaProjects\\Music-Animator\\Animations\\Harambe\\Slow";
-            System.out.print("tester file");
-            File tester = new File("C:\\Users\\Marcy\\IdeaProjects\\Music-Animator\\src\\com\\music\\animator\\Animations\\Harambe\\Slow");
-            String[] testerList = tester.list();
-
-            if (tester.isDirectory()) {
-                System.out.println("is directory :" + file.getAbsolutePath());
-                if (testerList != null) {
-                    System.out.println("tester list not null");
-                }
-            } else if (tester.isFile()) {
-                System.out.println("is file");
-            } else {
-                System.out.println("is not directory or file!");
-
-            }
-
-            // gets all files & subdirectories in here
-            // but we'll only have subdirectories
+            // gets all files & subdirectories (we only have directories tho)
             String[] animationLoopNames = file.list();
             if (animationLoopNames == null) {
                 System.out.println("animation loop file names list = null ");
-
             }
-            /*
+
+            String animationFolderPath = new String(path);
             for (String name: animationLoopNames) {
                 // create new animation object for each file
                 System.out.println( "Subdirectory: " + name);
                 AnimationLoop animationLoop = new AnimationLoop();
 
                 // loop into image files
-                path = path + name + "/";
+                animationFolderPath = path + name + "/";
                 System.out.println("Animation Folder: " + name);
-                file = new File(path);
-                String[] imageNames = file.list();
-                for (String imageName: imageNames) {
-                    path = path + imageName;
-                    URL url = MusicPlayer.class.getResource(path);
-                    System.out.println("Url:" + url );
+                file = new File(animationFolderPath);
+                System.out.println("Animation Folder path " + animationFolderPath);
 
-                    BufferedImage img = null;
-                    try {
-                        img = ImageIO.read(new File(url.getPath()));
-                        animationLoop.addFrame(img);
-                    } catch (IOException e) {
+                String[] imageNames = file.list();
+                if (imageNames != null) {
+                    String imgPath = new String(animationFolderPath);
+                    for (String imageName: imageNames) {
+                        imgPath = animationFolderPath + imageName;
+                        BufferedImage image = null;
+                        try {
+                            System.out.println("Image file:" + imgPath);
+                            image = ImageIO.read(new File(imgPath));
+                            animationLoop.addFrame(image);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
+                    // add animation loop into appropriate list
+                    list.add(animationLoop);
                 }
-            } */
+            }
         }
 
+    }
+
+    public void  verification(){
+        if (_slow != null) {
+            System.out.println("Slow list size: " + _slow.size());
+        } else if (_medium != null) {
+            System.out.println("medium list size: " + _medium.size());
+        } else if (_fast != null) {
+            System.out.println("Fast list size: " + _fast.size());
+        }
     }
 }
