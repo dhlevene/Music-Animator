@@ -1,5 +1,7 @@
 package com.music.animator;
 
+import com.sun.tools.javah.Util;
+
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -29,9 +31,6 @@ public class screenShotPanel extends JPanel implements ActionListener {
     // Send Email
     JButton emailButton;
 
-    // Back to Animation
-    JButton backButton;
-
     // Back to home screen
     JButton menuButton;
     JLabel emailLabel;
@@ -48,13 +47,13 @@ public class screenShotPanel extends JPanel implements ActionListener {
         actionPanel.add(emailLabel);
         actionPanel.add(emailInput);
         actionPanel.add(emailButton);
-        actionPanel.add(backButton);
         actionPanel.add(menuButton);
 
     }
 
     public void init()
     {
+
         // Initialize Panes
         picturePanel = new JPanel();
         actionPanel = new JPanel();
@@ -73,7 +72,6 @@ public class screenShotPanel extends JPanel implements ActionListener {
 
         // Initialize Buttons
         emailButton = new JButton("Send Email");
-        backButton = new JButton("Back to Animation");
         menuButton = new JButton("Back to Main Screen");
 
         emailLabel = new JLabel("Enter email here: ");
@@ -98,15 +96,15 @@ public class screenShotPanel extends JPanel implements ActionListener {
             }
         });
 
-        backButton.addActionListener(new ActionListener()
-        {
+
+        menuButton.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e)
-            {
+            public void actionPerformed(ActionEvent e) {
 
-
+                
             }
         });
+
 
 
     }

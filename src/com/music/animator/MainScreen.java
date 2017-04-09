@@ -97,6 +97,7 @@ public class MainScreen extends JPanel implements ActionListener{
                 remove(mainPanel);
                 add(new animationScreen());
                 validate();
+
             }
         });
         //selectDancerButton.addActionListener(this);
