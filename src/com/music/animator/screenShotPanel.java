@@ -57,24 +57,19 @@ public class screenShotPanel extends JPanel implements ActionListener {
             public void actionPerformed(ActionEvent e)
             {
 
-                String[] to = { emailInput.getText() }; // list of recipient email addresses
+                String[] recipientArray = { emailInput.getText() }; // list of recipient email addresses
                 String body = "Here's the Screenshot from your animation!!";
 
-                sendScreenshot(to, body);
+                sendScreenshot(recipientArray, body);
 
             }
         });
-
 
         backButton = new JButton("Back to Animation");
         menuButton = new JButton("Back to Main Screen");
 
         emailLabel = new JLabel("Enter email here: ");
         emailInput = new JTextField("yourEmail@example.com");
-
-
-
-
     }
 
 
@@ -85,13 +80,11 @@ public class screenShotPanel extends JPanel implements ActionListener {
     }
 
 
-
     private static void sendScreenshot(String[] recipientArray, String body)
     {
         String host = "smtp.gmail.com";
         String port = "587";
         String subject = "Your Animation Screenshot";
-
 
         Properties properties = System.getProperties();
         properties.put("mail.smtp.host", host);
@@ -100,7 +93,6 @@ public class screenShotPanel extends JPanel implements ActionListener {
         properties.put("mail.smtp.password", EMAIL_PASSWORD);
         properties.put("mail.smtp.port", port);
         properties.put("mail.smtp.starttls.enable", "true");
-
 
         Session session = Session.getDefaultInstance(properties);
 
