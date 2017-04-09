@@ -66,6 +66,18 @@ public class screenShotPanel extends JPanel implements ActionListener {
         });
 
         backButton = new JButton("Back to Animation");
+        backButton.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+
+
+            }
+        });
+
+
+
         menuButton = new JButton("Back to Main Screen");
 
         emailLabel = new JLabel("Enter email here: ");
@@ -82,6 +94,8 @@ public class screenShotPanel extends JPanel implements ActionListener {
 
     private static void sendScreenshot(String[] recipientArray, String body)
     {
+        JFrame emailSentFrame = new JFrame();
+
         String host = "smtp.gmail.com";
         String port = "587";
         String subject = "Your Animation Screenshot";
@@ -121,11 +135,15 @@ public class screenShotPanel extends JPanel implements ActionListener {
             transport.connect(host, EMAIL_ADDRESS, EMAIL_PASSWORD);
             transport.sendMessage(mimeMessage, mimeMessage.getAllRecipients());
             transport.close();
+
+            JOptionPane.showMessageDialog(emailSentFrame, "Screenshot has been emailed", "Sent", JOptionPane.PLAIN_MESSAGE);
+
         }
 
         catch (MessagingException messagingException)
         {
-            messagingException.printStackTrace();
+            JOptionPane.showMessageDialog(emailSentFrame, "Email Failed", "Error", JOptionPane.ERROR_MESSAGE);
+
         }
     }
 
