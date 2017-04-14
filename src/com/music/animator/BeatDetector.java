@@ -72,7 +72,7 @@ public class BeatDetector
 
             FFTbase testing = new FFTbase();
             double [] trash = testing.fft(samples,imagPart,true);
-            double [] freq = new double[freq.length];
+            double [] freq = new double[trash.length];
 
             for(int i = 0; i < trash.length; i++)
             {
