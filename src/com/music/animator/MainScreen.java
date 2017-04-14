@@ -92,22 +92,28 @@ public class MainScreen extends JPanel implements ActionListener{
         uploadAudioButton = new JButton("Upload Audio");
 
 
+        // Once the user presses the upload audio button, they can select a song from their computer
         uploadAudioButton.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {
-
+            public void actionPerformed(ActionEvent e)
+            {
+                // New file chooser to allow the user to select a song
                 JFileChooser fileChooser = new JFileChooser();
 
+                // If yes/ok is selected by the user, return the file
                 if (fileChooser.APPROVE_OPTION == fileChooser.showOpenDialog(null))
                 {
+                    // Get the selected file from the user
                     File audioFile = fileChooser.getSelectedFile();
 
+                    // Get the name of the selected file as a string, for the audio player
                     String songName = audioFile.getName();
 
+                    // Print name for debugging purposes
                     System.out.println(songName);
-
                 }
 
+                // If the file is not selected
                 else
                 {
                     System.out.println("File Not Selected");
