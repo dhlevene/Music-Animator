@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
 /**
  * Created by Damian Suski on 3/19/2017.
@@ -90,6 +91,33 @@ public class MainScreen extends JPanel implements ActionListener{
         selectAudioButton = new JButton("Select Song");
         uploadAudioButton = new JButton("Upload Audio");
 
+
+        uploadAudioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                JFileChooser fileChooser = new JFileChooser();
+
+                if (fileChooser.APPROVE_OPTION == fileChooser.showOpenDialog(null))
+                {
+                    File audioFile = fileChooser.getSelectedFile();
+
+                    String songName = audioFile.getName();
+
+                    System.out.println(songName);
+
+                }
+
+                else
+                {
+                    System.out.println("File Not Selected");
+                }
+
+
+            }
+        });
+
+
         startAnimationButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -121,4 +149,8 @@ public class MainScreen extends JPanel implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         repaint();
     }
+
+
+
+
 }
