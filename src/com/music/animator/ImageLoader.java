@@ -13,7 +13,6 @@ import java.util.ArrayList;
  */
 public class ImageLoader {
 
-    // Trump = 0, Harambe = 1
     public static final int TRUMP = 0;
     public static final int HARAMBE = 1;
     private int _character;
