@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7a5562bd-6fc1-436c-9a03-c88aa674bde7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Music Animator.iml" afterPath="$PROJECT_DIR$/Music Animator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/music/animator/BeatDetector.java" afterPath="$PROJECT_DIR$/src/com/music/animator/BeatDetector.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -734,7 +732,7 @@
       <workItem from="1492133431067" duration="2050000" />
       <workItem from="1492144089928" duration="2569000" />
       <workItem from="1492209020263" duration="118000" />
-      <workItem from="1492209208573" duration="804000" />
+      <workItem from="1492209208573" duration="822000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Animation Builder Commit">
       <created>1490549518581</created>
@@ -827,11 +825,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492209082203</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Merge remote-tracking branch 'remotes/origin/master' into beatdetection&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1492210030859</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1492210030859</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43778000" />
+    <option name="totallyTimeSpent" value="43796000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
