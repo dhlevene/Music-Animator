@@ -10,6 +10,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.util.Properties;
 import javax.mail.*;
 
@@ -149,37 +150,25 @@ public class screenShotPanel extends JPanel implements ActionListener {
         // Enable use of starttls commands
         properties.put("mail.smtp.starttls.enable", "true");
 
-        Session session = Session.getInstance(properties,
-                new javax.mail.Authenticator() {
-                    protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication(EMAIL_ADDRESS, EMAIL_PASSWORD);
-                    }
-                });
-
-        //
-//        // New mail session, collects the properties and the defaults used by the mail API
-//        Session session = Session.getDefaultInstance(properties);
-
-//        // Create empty message object
-//        MimeMessage mimeMessage = new MimeMessage(session);
-//
+        // New mail session, collects the properties and the defaults used by the mail API
+        Session session = Session.getInstance(properties, new javax.mail.Authenticator()
+        {
+            protected PasswordAuthentication getPasswordAuthentication()
+            {
+                return new PasswordAuthentication(EMAIL_ADDRESS, EMAIL_PASSWORD);
+            }
+        });
 
 
-        // Create a default MimeMessage object.
+        // Create a default Message object.
         Message message = new MimeMessage(session);
 
-        try {
+        // Try to send the email
+        try
+        {
 
-
-
-
-            // Set From: header field of the header.
+            // Set the "From" header field of the email.
             message.setFrom(new InternetAddress(EMAIL_ADDRESS));
-
-//            // Set To: header field of the header.
-//            message.setRecipients(Message.RecipientType.TO,
-//                    InternetAddress.parse(to));
-
 
             // New array of the class internet address to store the recipient email address in the format "user@host.domain"
             InternetAddress[] recipientAddress = new InternetAddress[recipientArray.length];
@@ -199,101 +188,55 @@ public class screenShotPanel extends JPanel implements ActionListener {
             }
 
 
-            // Set Subject: header field
-            message.setSubject("Testing Subject");
+            // Set the "Subject" field of the email
+            message.setSubject("Music Animator Screenshot");
 
-            // This mail has 2 part, the BODY and the embedded image
-            MimeMultipart multipart = new MimeMultipart("related");
+            // Create Multipart for message, the first part is the text and the second part will be the image
+            MimeMultipart multiPart = new MimeMultipart("related");
 
-            // first part (the html)
-            BodyPart messageBodyPart = new MimeBodyPart();
-            String htmlText = "<H1>Hello</H1><img src=\"cid:image\">";
-            messageBodyPart.setContent(htmlText, "text/html");
-            // add it
-            multipart.addBodyPart(messageBodyPart);
+            // The text part of the email 
+            BodyPart emailText = new MimeBodyPart();
 
-            // second part (the image)
-            messageBodyPart = new MimeBodyPart();
+            // Text for the body of the email in html format
+            String textInHTML = "<H3>Here is your screenshot of your dancing animation!!</H3><img src=\"cid:image\">";
+
+            // set the message content to have the html text
+            emailText.setContent(textInHTML, "text/html");
+
+            // add the text to the multipart message
+            multiPart.addBodyPart(emailText);
+
+            // Create another part of the message for the image
+            emailText = new MimeBodyPart();
+
+            // This is temporarily grabbing an image from my desktop and adding it to the message
             FileDataSource fds = new FileDataSource("/Users/jamesharrison/Desktop/Harambe.png");
-            messageBodyPart.setDataHandler(new DataHandler(fds));
-            messageBodyPart.setHeader("Content-ID", "<image>");
+            emailText.setDataHandler(new DataHandler(fds));
 
-            // add image to the multipart
-            multipart.addBodyPart(messageBodyPart);
+            // Set the value for the header to an image
+            emailText.setHeader("Content-ID", "<image>");
 
-            // put everything together
-            message.setContent(multipart);
-            // Send message
-            Transport.send(message);
+            // add the image to the multipart message
+            multiPart.addBodyPart(emailText);
 
-            System.out.println("Sent message successfully....");
+            // Set the message content to hold both parts of the message
+            message.setContent(multiPart);
 
-        } catch (MessagingException e) {
-            throw new RuntimeException(e);
+            // Send the message to all recipients
+            Transport.send(message, message.getAllRecipients());
+
+            // Pop up indicating successful email
+            JOptionPane.showMessageDialog(emailSentFrame, "Screenshot has been emailed", "Sent", JOptionPane.PLAIN_MESSAGE);
+
         }
 
+        catch (MessagingException e)
+        {
+            // Pop up indicating an error with sending the email
+            JOptionPane.showMessageDialog(emailSentFrame, "Email Failed", "Error", JOptionPane.ERROR_MESSAGE);
 
+        }
 
-
-
-
-
-
-
-//        // Try to send the email
-//        try
-//        {
-//
-//            // set the "From" header field of the email
-//            mimeMessage.setFrom(new InternetAddress(EMAIL_ADDRESS));
-//
-//            // New array of the class internet address to store the recipient email address in the format "user@host.domain"
-//            InternetAddress[] recipientAddress = new InternetAddress[recipientArray.length];
-//
-//            // loop through the recipient email string array
-//            for(int i = 0; i < recipientArray.length; i++)
-//            {
-//                // Copy over to the InternetAddress array
-//                recipientAddress[i] = new InternetAddress(recipientArray[i]);
-//            }
-//
-//            // Loop through the internet address
-//            for(int i = 0; i < recipientAddress.length; i++)
-//            {
-//                // Add the address to the recipient type
-//                mimeMessage.addRecipient(Message.RecipientType.TO, recipientAddress[i]);
-//            }
-//
-//            // Sets the body of the message
-//            mimeMessage.setText(body);
-//
-//            // set the "Subject" Header field
-//            mimeMessage.setSubject(subject);
-//
-//            // Get a transport which implements smtp
-//            Transport transport = session.getTransport("smtp");
-//
-//            // Connect transport to specified sending address
-//            transport.connect(host, EMAIL_ADDRESS, EMAIL_PASSWORD);
-//
-//            // Send the message
-//            transport.sendMessage(mimeMessage, mimeMessage.getAllRecipients());
-//
-//            // Close connection
-//            transport.close();
-//
-//            // Pop up indicating successful email
-//            JOptionPane.showMessageDialog(emailSentFrame, "Screenshot has been emailed", "Sent", JOptionPane.PLAIN_MESSAGE);
-//
-//        }
-//
-//        // Catch an error in sending the email
-//        catch (MessagingException messagingException)
-//        {
-//            // Pop indicating an error with sending the email
-//            JOptionPane.showMessageDialog(emailSentFrame, "Email Failed", "Error", JOptionPane.ERROR_MESSAGE);
-//
-//        }
     }
 
 
