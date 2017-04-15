@@ -100,7 +100,7 @@ public class MainScreen extends JPanel implements ActionListener{
                 // New file chooser to allow the user to select a song
                 JFileChooser fileChooser = new JFileChooser();
 
-                FileNameExtensionFilter filter = new FileNameExtensionFilter("Wave .wav", "wav");
+                FileNameExtensionFilter filter = new FileNameExtensionFilter("Wave .wav or MIDI .mid", "wav","mid");
                 fileChooser.addChoosableFileFilter(filter);
                 fileChooser.setFileFilter(filter);
 
