@@ -23,18 +23,21 @@ public class animationScreen extends JPanel implements ActionListener {
 
     Timer timer = new Timer(10,this);
 
+    private JPanel mainPanel;
     private JPanel left;
     private JPanel right;
     private JPanel animationBox;
     private JPanel videoControl;
     private JButton TakeScreenShot;
     private JButton backButton;
+    private JButton playButton;
 
     public animationScreen() {
         init();
 
         right.add(TakeScreenShot);
         right.add(backButton);
+        videoControl.add(playButton);
 
         /*Makes sure that we can click on the panel*/
         setFocusable(true);
@@ -48,12 +51,14 @@ public class animationScreen extends JPanel implements ActionListener {
         //left = new JPanel(new BoxLayout(left, BoxLayout.Y_AXIS));
         //right = new JPanel(new BoxLayout(right, BoxLayout.Y_AXIS));
 
+        mainPanel = new JPanel();
         left = new JPanel();
         right = new JPanel();
         videoControl = new JPanel();
         animationBox = new JPanel();
 
         //Borders will eventually be commented out, only here for visual display of Panel size
+        mainPanel.setPreferredSize(new Dimension(800,600)
         left.setPreferredSize(new Dimension(500,500));
         left.setBorder(BorderFactory.createTitledBorder("Animation goes here"));
         right.setPreferredSize(new Dimension(200,500));
@@ -63,16 +68,17 @@ public class animationScreen extends JPanel implements ActionListener {
         animationBox.setPreferredSize((new Dimension(475, 370)));
         animationBox.setBorder(BorderFactory.createTitledBorder("animation goes here"));
 
-
-        add(left, BorderLayout.WEST);
-        add(right, BorderLayout.EAST);
+        this.add(mainPanel);
+        mainPanel.add(left, BorderLayout.WEST);
+        mainPanel.add(right, BorderLayout.EAST);
         left.add(animationBox, BorderLayout.NORTH);
         left.add(videoControl, BorderLayout.SOUTH);
         //Want VideoControl to be rught under animation
 
         TakeScreenShot = new JButton("take a Screen Shot");
         backButton = new JButton("Go back to Main Screen");
-
+        playButton = new JButton(">");
+                                   
         TakeScreenShot.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -95,6 +101,30 @@ public class animationScreen extends JPanel implements ActionListener {
                 takeScreenShot(animationBox);
 
 
+            }
+        });
+        backButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                remove(mainPanel);
+                add(new MainScreen());
+                validate();
+            }
+        });
+
+        playButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(playButton.getText() == ">")
+                {
+                    playButton.setText("||");
+                    //Pause the damn animation/song
+                }
+                else
+                {
+                    playButton.setText(">");
+                    //resume the damn animation/song
+                }
             }
         });
     }
