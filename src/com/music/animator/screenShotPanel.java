@@ -1,18 +1,17 @@
 package com.music.animator;
 
-import com.sun.tools.javah.Util;
-
 import javax.activation.DataHandler;
 import javax.activation.FileDataSource;
-import javax.mail.internet.*;
-import javax.sql.DataSource;
+import javax.mail.*;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.util.Properties;
-import javax.mail.*;
 
 
 /**
