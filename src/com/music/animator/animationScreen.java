@@ -1,9 +1,13 @@
 package com.music.animator;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by mende on 3/26/2017.
@@ -68,9 +72,11 @@ public class animationScreen extends JPanel implements ActionListener {
         TakeScreenShot = new JButton("take a Screen Shot");
         backButton = new JButton("Go back to Main Screen");
 
-        TakeScreenShot.addActionListener(new ActionListener() {
+        TakeScreenShot.addActionListener(new ActionListener()
+        {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e)
+            {
                 // PAUSE ANIMATION
 
                 JFrame window = new JFrame("ScreenShot");
@@ -84,6 +90,10 @@ public class animationScreen extends JPanel implements ActionListener {
                 window.setLocationRelativeTo(null);
                 window.setVisible(true);
                 window.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+
+                // Call method to take the screenshot
+                takeScreenShot(animationBox);
+
             }
         });
     }
@@ -98,5 +108,44 @@ public class animationScreen extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         repaint();
     }
+
+
+    
+    // Method which takes a screenshot
+    void takeScreenShot(Component animationWindow)
+    {
+        // Area of just the animation box window
+        Rectangle rect = animationWindow.getBounds();
+
+        // Try to take a screenshot
+        try
+        {
+            // Set the file format
+            String format = "png";
+
+            // Name of the file
+            String fileName ="Your Screenshot." + format;
+
+            // Create an image, in the size of the animation window,
+            // TYPE_INT_ARGB = 8 bit RGBA integer pixels
+            // getGraphics() returns a 2d backwards compatible image
+            BufferedImage captureImage = new BufferedImage(rect.width, rect.height,
+                            BufferedImage.TYPE_INT_ARGB);
+                            animationWindow.paint(captureImage.getGraphics());
+
+            // Write an image, create a new file and store it in the format
+            ImageIO.write(captureImage, format, new File(fileName));
+
+            System.out.println("The screenshot was saved!");
+        }
+
+        catch (IOException ex)
+        {
+            System.out.println("Error with the screenshot");
+            System.err.println(ex);
+        }
+    }
+
+
 
 }
