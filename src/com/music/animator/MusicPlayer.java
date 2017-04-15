@@ -20,7 +20,6 @@ public class MusicPlayer {
         if ( _clipLoaded == false) {
             try {
                // AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(url.getPath()));
-
                 URL url = MusicPlayer.class.getResource(fileName);
                 System.out.println("Url:" + url );
                  AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(url);
