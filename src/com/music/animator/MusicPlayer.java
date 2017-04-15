@@ -29,12 +29,12 @@ public class MusicPlayer {
                // _clip.loop(10);
                 _clip.start();
                 _clipLoaded = true;
-                while (!_clip.isRunning())
-                    Thread.sleep(10);
-                while (_clip.isRunning())
-                    Thread.sleep(10);
-
-                _clip.close();
+//                while (!_clip.isRunning())
+//                    Thread.sleep(10);
+//                while (_clip.isRunning())
+//                    Thread.sleep(10);
+//
+//                _clip.close();
 
             } catch (Exception ex) {
                 System.out.println("Error with playing sound.");

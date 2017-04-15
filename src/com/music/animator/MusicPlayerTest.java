@@ -1,5 +1,8 @@
 package com.music.animator;
 
+import java.io.InterruptedIOException;
+import java.util.concurrent.TimeUnit;
+
 public class MusicPlayerTest {
     private static String _fileName = "preselected_songs/Shape_of_you.wav";
     public static void main(String args[]) {
@@ -13,13 +16,14 @@ public class MusicPlayerTest {
 
         mp.play(_fileName);
 
-//loop for ~5 seconds
-        for(int i = 0; i < 2147483647 ; i++) {
-//another loop because it's 2012 and PCs have gotten considerably faster :)
-            for(int j = 0; j < 2147483647 ; j++){
-//MusicPlayer.pause();
-            }
-        }
+//try{
+//    TimeUnit.SECONDS.sleep(4);
+//    mp.pause();
+//} catch (InterruptedException e) {
+//    e.printStackTrace();
+//}
+
+
         System.out.println(counter + ". Hello World!");
         counter++;
 
