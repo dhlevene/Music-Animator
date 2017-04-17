@@ -14,7 +14,7 @@ public class MusicPlayerTest {
 
         int counter = 0;
 
-        mp.play(_fileName);
+       // mp.play(_fileName);
 
 //try{
 //    TimeUnit.SECONDS.sleep(4);
