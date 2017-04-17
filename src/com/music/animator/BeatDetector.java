@@ -4,12 +4,10 @@ import java.io.*;
 import javax.sound.sampled.*;
 import javax.sound.sampled.AudioFormat.*;
 import java.nio.*;
+
 public class BeatDetector
 {
-
-
-
-        public static double[] ReadFile(File file) throws UnsupportedAudioFileException, IOException,InterruptedException
+        public static int[] ReadFile(File file) throws UnsupportedAudioFileException, IOException,InterruptedException
         {
             AudioInputStream in = AudioSystem.getAudioInputStream(file);
             AudioFormat format = in.getFormat();
@@ -35,6 +33,8 @@ public class BeatDetector
             }
 
             int bits = format.getSampleSizeInBits();
+            System.out.println(bits);
+            System.out.println(format.getSampleRate());
             double max = Math.pow(2,bits-1);
 
             // System.out.println((audio.length * 8));
@@ -78,7 +78,13 @@ public class BeatDetector
             {
                 freq[i] = trash[i]* format.getFrameRate() / format.getFrameSize();
             }
-            return freq;
+
+            int[] beatArray = new int[ freq.length /(int) format.getSampleRate()];
+
+            for(int i=0;i<beatArray.length-1;i++)
+                beatArray[i] = (int) freq[i*(int)format.getSampleRate()];
+
+            return beatArray;
         }
 
 

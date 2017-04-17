@@ -1,4 +1,5 @@
-package com.music.animator;/* Collaborators:
+package com.music.animator;
+/* Collaborators:
 * Daniel Levene
 * Damian Suski
 * Mauricio Mendez
@@ -7,7 +8,6 @@ package com.music.animator;/* Collaborators:
 * James Harrison*/
 
 import javax.swing.*;
-import java.awt.*;
 
 /*Last edit by Damian Suski, 3/19/2017 Added JFrame*/
 public class Main {

@@ -1,8 +1,7 @@
 package com.music.animator;
 
-import com.sun.scenario.effect.impl.sw.java.JSWBlend_COLOR_BURNPeer;
-
 import javax.imageio.ImageIO;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,7 +9,8 @@ import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.nio.Buffer;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 /**
  * Created by mende on 3/26/2017.
@@ -28,15 +28,18 @@ public class animationScreen extends JPanel implements ActionListener {
     private JPanel mainPanel;
     private JPanel left;
     private JPanel right;
-    private JPanel animationBox;
+    private DrawingPanel animationBox;
     private JPanel videoControl;
     private JButton TakeScreenShot;
     private JButton backButton;
     private JButton playButton;
+    private File song;
+    private int character;
 
-    public animationScreen() {
+    public animationScreen(File song,int character) {
+        this.character = character;
+        this.song = song;
         init();
-
         right.add(TakeScreenShot);
         right.add(backButton);
         videoControl.add(playButton);
@@ -57,40 +60,42 @@ public class animationScreen extends JPanel implements ActionListener {
         left = new JPanel();
         right = new JPanel();
         videoControl = new JPanel();
-        animationBox = new JPanel();
+
+
+        try {
+            animationBox = new DrawingPanel(new AnimationBuilder(BeatDetector.ReadFile(song),character));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         //Borders will eventually be commented out, only here for visual display of Panel size
         mainPanel.setPreferredSize(new Dimension(800,600));
         left.setPreferredSize(new Dimension(500,500));
-        left.setBorder(BorderFactory.createTitledBorder("Animation goes here"));
+        left.setBorder(BorderFactory.createTitledBorder(""));
         right.setPreferredSize(new Dimension(200,500));
-        right.setBorder(BorderFactory.createTitledBorder("Screenshot and back button go here"));
+        right.setBorder(BorderFactory.createTitledBorder(""));
         videoControl.setPreferredSize(new Dimension(475, 100));
-        videoControl.setBorder(BorderFactory.createTitledBorder("Play/Pause stuff goes here"));
+        videoControl.setBorder(BorderFactory.createTitledBorder(""));
         animationBox.setPreferredSize((new Dimension(475, 370)));
-        animationBox.setBorder(BorderFactory.createTitledBorder("animation goes here"));
-
+        animationBox.setBorder(BorderFactory.createTitledBorder(""));
 
         this.add(mainPanel);
         mainPanel.add(left, BorderLayout.WEST);
         mainPanel.add(right, BorderLayout.EAST);
         left.add(animationBox, BorderLayout.NORTH);
         left.add(videoControl, BorderLayout.SOUTH);
-        //Want VideoControl to be rught under animation
+        //Want VideoControl to be right under animation
 
         TakeScreenShot = new JButton("take a Screen Shot");
         backButton = new JButton("Go back to Main Screen");
         playButton = new JButton(">");
-
+                                   
         TakeScreenShot.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // PAUSE ANIMATION
 
                 JFrame window = new JFrame("ScreenShot");
 
-        /*Following code is used to get screen resolution. Probably unnecessary*/
-        /*Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();*/
                 window.setSize(700,450);
                 window.add(new screenShotPanel());
 
@@ -106,7 +111,6 @@ public class animationScreen extends JPanel implements ActionListener {
 
             }
         });
-
         backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -122,12 +126,21 @@ public class animationScreen extends JPanel implements ActionListener {
                 if(playButton.getText() == ">")
                 {
                     playButton.setText("||");
+                    animationBox.setActive(true);
+                    try {
+                        MusicPlayer.play(song.toURI().toURL());
+                    } catch (MalformedURLException e1) {
+                        e1.printStackTrace();
+                    }
                     //Pause the damn animation/song
                 }
                 else
                 {
+                    animationBox.setActive(false);
                     playButton.setText(">");
+                    MusicPlayer.pause();
                     //resume the damn animation/song
+
                 }
             }
         });

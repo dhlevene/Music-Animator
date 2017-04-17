@@ -3,12 +3,15 @@ package com.music.animator;
 /*Created by Damian Suski*/
 
 import java.awt.*;
+import java.util.Arrays;
+import java.util.Random;
 
 public class AnimationBuilder {
 
     private static final int SAMPLE_SECONDS = 2; /*Goes n seconds before and after current frame for median value*/
     private int[] beatArray; /*Stores the beats from the beat detector class*/
     private AnimationLoop currentAnimation;
+    private ImageLoader imageLoader;
 
     private int stratifyAmount; /*1/3 value between minimum BPM and max*/
     private int minBPM=0;
@@ -16,8 +19,9 @@ public class AnimationBuilder {
     private int currentFrame;
 
 
-    public void AnimationBuilder(int[] beatArray){
+    public AnimationBuilder(int[] beatArray, int character){
         this.beatArray = beatArray;
+        imageLoader = new ImageLoader(character);
 
         /*Find maximum and minimum values*/
         for(int i=0;i<beatArray.length;i++){
@@ -46,6 +50,7 @@ public class AnimationBuilder {
         int end=songTime+stratifyAmount;
         int counter;
         int[] segment;
+        Random random = new Random(System.nanoTime());
 
         currentFrame = 0;
 
@@ -63,7 +68,7 @@ public class AnimationBuilder {
             counter++;
         }
 
-        bubbleSort(segment);
+        segment = bubbleSort(segment);
 
         if(segment.length>SAMPLE_SECONDS+1)
             medianBPM = segment[SAMPLE_SECONDS+1];
@@ -73,32 +78,31 @@ public class AnimationBuilder {
 
         /*Add animationLoop logic*/
         if(medianBPM<stratifyAmount+minBPM){
-
+            currentAnimation = imageLoader.get_slow().get(random.nextInt(imageLoader.get_slow().size()));
         }
         else if(medianBPM<stratifyAmount*2+minBPM){
-
+            currentAnimation = imageLoader.get_medium().get(random.nextInt(imageLoader.get_medium().size()));
         }
         else {
-
+            currentAnimation = imageLoader.get_fast().get(random.nextInt(imageLoader.get_fast().size()));
         }
     }
 
     /*Bubble sort*/
-    public int[] bubbleSort(int[] oldArray){
+    private int[] bubbleSort(int[] oldArray){
 
-        int[] newArray = oldArray;
         int temp;
 
-        for(int i=0;i<newArray.length;i++){
-            for(int j=0;j<newArray.length-1;j++){
-                if(newArray[j]>newArray[j+1]){
-                    temp = newArray[j];
-                    newArray[j] = newArray[j+1];
-                    newArray[j+1] = temp;
+        for(int i=0;i<oldArray.length;i++){
+            for(int j=0;j<oldArray.length-1;j++){
+                if(oldArray[j]>oldArray[j+1]){
+                    temp = oldArray[j];
+                    oldArray[j] = oldArray[j+1];
+                    oldArray[j+1] = temp;
                 }
             }
         }
 
-        return newArray;
+        return oldArray;
     }
 }

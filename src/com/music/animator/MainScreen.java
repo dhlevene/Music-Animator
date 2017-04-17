@@ -4,7 +4,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import javax.swing.filechooser.FileNameExtensionFilter;
 /**
  * Created by Damian Suski on 3/19/2017.
@@ -19,14 +23,14 @@ public class MainScreen extends JPanel implements ActionListener{
     private JPanel right;
     private JPanel bottom;
     private JButton startAnimationButton;
-    private JButton selectDancerButton;
     private JButton selectAudioButton;
     private JButton uploadAudioButton;
-    private JButton humanDancer;
-    private JButton animalDancer;
+    private JToggleButton humanDancer;
+    private JToggleButton animalDancer;
     private JLabel animatedMusicDancer;
     private JLabel dancer;
     private JLabel audio;
+    private File song;
 
     public MainScreen(){
         init();
@@ -38,7 +42,6 @@ public class MainScreen extends JPanel implements ActionListener{
         bottom.add(startAnimationButton);
         left.add(humanDancer);
         left.add(animalDancer);
-        left.add(selectDancerButton);
         right.add(selectAudioButton);
         right.add(uploadAudioButton);
 
@@ -85,9 +88,23 @@ public class MainScreen extends JPanel implements ActionListener{
         mainPanel.add(bottom, BorderLayout.SOUTH);
 
         startAnimationButton = new JButton("Start Animation");
-        selectDancerButton = new JButton("Select Dancer");
-        humanDancer = new JButton("     TRUMP     "); // This Button Should contain the image of the Dancer
-        animalDancer = new JButton("HARAMBE");        //This button should contain the image of the Dancer
+        humanDancer = new JToggleButton("     TRUMP     "); // This Button Should contain the image of the Dancer
+        humanDancer.setSelected(true);
+        humanDancer.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if(e.getStateChange()==ItemEvent.SELECTED)
+                    animalDancer.setSelected(false);
+            }
+        });
+        animalDancer = new JToggleButton("HARAMBE");        //This button should contain the image of the Dancer
+        animalDancer.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if(e.getStateChange()==ItemEvent.SELECTED)
+                    humanDancer.setSelected(false);
+            }
+        });
         selectAudioButton = new JButton("Select Song");
         uploadAudioButton = new JButton("Upload Audio");
 
@@ -111,10 +128,7 @@ public class MainScreen extends JPanel implements ActionListener{
                     File audioFile = fileChooser.getSelectedFile();
 
                     // Get the name of the selected file as a string, for the audio player
-                    String songName = audioFile.getName();
-
-                    // Print name for debugging purposes
-                    System.out.println(songName);
+                    song = audioFile;
                 }
 
                 // If the file is not selected
@@ -132,16 +146,15 @@ public class MainScreen extends JPanel implements ActionListener{
             @Override
             public void actionPerformed(ActionEvent e) {
                 //this.add(new DancerSelection());
+                if(song==null)
+                    return;
                 remove(mainPanel);
-                //mainPanel.setVisible(false);
-                add(new animationScreen());
+                add(new animationScreen(song,humanDancer.isSelected()?ImageLoader.TRUMP:ImageLoader.HARAMBE));
                 validate();
 
             }
         });
-        //selectDancerButton.addActionListener(this);
         //selectAudioButton.addActionListener(this);
-        //uploadAudioButton.addActionListener(this);
 
         animatedMusicDancer = new JLabel("Animated Music Dancer");
         dancer = new JLabel("Please select a Dancer for the animation");
