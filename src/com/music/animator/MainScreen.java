@@ -13,9 +13,9 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 /**
  * Created by Damian Suski on 3/19/2017.
  */
-public class MainScreen extends JPanel implements ActionListener{
-
-    Timer timer = new Timer(125,this);
+public class MainScreen extends JPanel implements ActionListener
+{
+    Timer timer = new Timer(10,this);
 
     private JPanel mainPanel;
     private JPanel top;
@@ -31,8 +31,11 @@ public class MainScreen extends JPanel implements ActionListener{
     private JLabel dancer;
     private JLabel audio;
     private File song;
+    private JComboBox songsList;
 
-    public MainScreen(){
+
+    public MainScreen()
+    {
         init();
 
         top.add(animatedMusicDancer);
@@ -70,6 +73,17 @@ public class MainScreen extends JPanel implements ActionListener{
         left = new JPanel();
         right = new JPanel();
         //bottom = new JPanel();
+
+        String songListArray[] = {"preselected_songs/Shape_of_you.wav", "preselected_songs/Shape_of_you.mp3"};
+
+        songsList = new JComboBox(songListArray);
+
+        songsList.setVisible(false);
+
+        songsList.setBounds(50, 50, 90, 20);
+
+        right.add(songsList);
+
 
         mainPanel.setPreferredSize(new Dimension(800,600));
         top.setPreferredSize(new Dimension(800,100));
@@ -109,11 +123,28 @@ public class MainScreen extends JPanel implements ActionListener{
         uploadAudioButton = new JButton("Upload Audio");
 
 
+        selectAudioButton.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                songsList.setVisible(true);
+
+            }
+        });
+
         // Once the user presses the upload audio button, they can select a song from their computer
         uploadAudioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e)
             {
+
+                if (songsList.isVisible())
+                {
+                    songsList.setVisible(false);
+                }
+
+                
                 // New file chooser to allow the user to select a song
                 JFileChooser fileChooser = new JFileChooser();
 
