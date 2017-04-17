@@ -42,4 +42,10 @@ public class MusicPlayer {
         _clipTime= _clip.getMicrosecondPosition();
         _clip.stop();
     }
+
+    public static void stop(){
+        _clip.stop();
+        _clip = null;
+        _clipLoaded = false;
+    }
 }

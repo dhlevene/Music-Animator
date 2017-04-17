@@ -115,7 +115,7 @@ public class animationScreen extends JPanel implements ActionListener {
                 remove(mainPanel);
                 add(new MainScreen());
                 validate();
-                MusicPlayer.pause();
+                MusicPlayer.stop();
             }
         });
 

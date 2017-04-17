@@ -2,289 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a5562bd-6fc1-436c-9a03-c88aa674bde7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/00baseHappyTFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/01baseHappy1TFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/02baseHappy2TFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/04baseHappy3TFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/05baseHappy4TFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/06baseHappy3TFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/07baseHappy2TFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/08baseHappy1TFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/09baseHappyTFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/10baseHappy1TFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/11baseHappy2TFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/12baseHappy3TFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/13baseHappy4TFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/14baseHappy3TFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/15baseHappy2TFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/16baseHappy1TFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/fastDabAnimation/17baseHappyTFDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/00HbaseHappy00HTChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/00baseHappyTChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/01baseHappy1TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/02baseHappy2TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/03baseHappy3TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/04baseHappy2TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/05baseHappy1TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/06baseHappy5TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/07baseHappy6TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/08baseHappy7TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/09baseHappy6TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/10baseHappy5TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/11baseHappy1TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/12baseHappy2TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/13baseHappy3TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/14baseHappy2TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/15baseHappy1TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/16baseHappy5TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/17baseHappy6TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/18baseHappy7TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/19baseHappy6TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/20baseHappy5TChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/21HbaseHappy00HTChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/hitChestAnimation/22baseHappyTChest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/rocketHeadAnimation/00baseHappyTRocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/rocketHeadAnimation/01baseHappy1TRocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/rocketHeadAnimation/02baseHappy2TRocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/rocketHeadAnimation/03baseHappy3TRocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/rocketHeadAnimation/04baseHappy4TRocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/rocketHeadAnimation/05baseHappy5TRocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/rocketHeadAnimation/06baseHappy6TRocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/rocketHeadAnimation/07baseHappy7TRocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/rocketHeadAnimation/08baseHappy8TRocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/rocketHeadAnimation/09baseHappy9TRocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/rocketHeadAnimation/10HbaseHappy10HTRocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/rocketHeadAnimation/10baseHappy10TRocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/rocketHeadAnimation/11baseHappy11TRocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/rocketHeadAnimation/12baseHappy12Rocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Fast/rocketHeadAnimation/13baseHappyTRocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/00baseHappyTMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/01baseHappy1TMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/02baseHappy2TMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/03baseHappy3TMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/04baseHappy4TMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/05baseHappy3TMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/06baseHappy2TMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/07baseHappy1TMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/08baseHappyTMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/09baseHappy5TMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/10baseHappy6TMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/11baseHappy7TMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/12baseHappy8TMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/13baseHappy7TMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/14baseHappy6TMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/15baseHappy5TMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/MarchAnimation/16baseHappyTMarch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/SwadeAnimation/00baseHappyTSwade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/SwadeAnimation/01baseHappy2TSwade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/SwadeAnimation/02baseHappy3TSwade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/SwadeAnimation/03baseHappy4TSwade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/SwadeAnimation/04baseHappy3TSwade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/SwadeAnimation/05baseHappy2TSwade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/SwadeAnimation/06baseHappyTSwade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/SwadeAnimation/07baseHappy5TSwade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/SwadeAnimation/08baseHappy6TSwade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/SwadeAnimation/09baseHappy7TSwade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/SwadeAnimation/10baseHappy6TSwade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/SwadeAnimation/11baseHappy5TSwade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/SwadeAnimation/12baseHappyTSwade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/00baseHappyTDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/01baseHappy1TDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/02baseHappy2TDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/03baseHappy3TDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/04baseHappy4TDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/05baseHappy3TDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/06baseHappy2TDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/07baseHappy1TDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/08baseHappyTDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/09baseHappy1TDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/10baseHappy2TDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/11baseHappy3TDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/12baseHappy4TDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/13baseHappy3TDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/14baseHappy2TDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/15baseHappy1TDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Medium/dabAnimation/16baseHappyTDab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/00baseHappyTBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/01baseHappy1TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/02baseHappy2TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/03baseHappy3TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/04baseHappy4TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/05baseHappy3TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/06baseHappy2TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/07rbaseHappy1TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/08baseHappy2TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/09baseHappy3TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/10baseHappy4TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/11baseHappy3TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/12baseHappy2TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/13rbaseHappy1TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/14baseHappyTBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/15baseHappy1TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/16baseHappy1TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/17baseHappy2TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/18baseHappy3TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/19baseHappy4TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/20baseHappy3TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/21baseHappy2TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/22rbaseHappy1TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/23baseHappy2TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/24baseHappy3TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/25baseHappy4TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/26baseHappy3TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/27baseHappy2TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/28rbaseHappy1TBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/BravoAnimation/29baseHappyTBravo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/armWaveAnimation/00baseHappyTWave.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/armWaveAnimation/01baseHappy1TWave.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/armWaveAnimation/02baseHappy2TWave.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/armWaveAnimation/03baseHappy3TWave.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/armWaveAnimation/04baseHappy2TWave.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/armWaveAnimation/05baseHappy1TWave.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/armWaveAnimation/06baseHappy1TWave.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/armWaveAnimation/07baseHappy2TWave.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/armWaveAnimation/08baseHappy3TWave.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/armWaveAnimation/09baseHappy2TWave.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/armWaveAnimation/10baseHappy1TWave.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/armWaveAnimation/11baseHappyTWave.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/footTapAnimation/00baseHappyTTap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/footTapAnimation/01baseHappy1TTap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/footTapAnimation/02baseHappy2TTap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/footTapAnimation/03baseHappy3TTap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/footTapAnimation/04baseHappy2TTap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/footTapAnimation/05baseHappy1TTap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/footTapAnimation/06baseHappy1TTap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/footTapAnimation/07baseHappy2TTap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/footTapAnimation/08baseHappy3TTap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/footTapAnimation/09baseHappy2TTap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/footTapAnimation/10baseHappy1TTap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Harambe/Slow/footTapAnimation/11baseHappyTTap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Russian Squat/Trump_mixed0071.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Russian Squat/Trump_mixed0072.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Russian Squat/Trump_mixed0073.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Russian Squat/Trump_mixed0074.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Russian Squat/Trump_mixed0075.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Russian Squat/Trump_mixed0076.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Russian Squat/Trump_mixed0077.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Russian Squat/Trump_mixed0078.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Russian Squat/Trump_mixed0079.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Russian Squat/Trump_mixed0080.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Russian Squat/Trump_mixed0081.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Russian Squat/Trump_mixed0082.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Russian Squat/Trump_mixed0083.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0109.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0111.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0112.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0113.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0114.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0115.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0116.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0117.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0118.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0119.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0120.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0121.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0122.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0123.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0124.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0125.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Fast/Toupee Twirl/Trump_mixed0126.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Dab/Trump_mixed0026.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Dab/Trump_mixed0027.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Dab/Trump_mixed0028.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Dab/Trump_mixed0029.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Dab/Trump_mixed0030.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Dab/Trump_mixed0031.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Dab/Trump_mixed0032.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Dab/Trump_mixed0033.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Dab/Trump_mixed0034.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Dab/Trump_mixed0035.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Dab/Trump_mixed0036.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Dab/Trump_mixed0037.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Dab/Trump_mixed0038.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0039.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0040.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0041.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0042.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0043.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0044.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0045.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0046.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0047.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0048.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0049.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0050.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0051.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0052.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0053.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0054.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0055.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0056.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Numa Numa/Trump_mixed0057.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Point/Trump_mixed0058.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Point/Trump_mixed0059.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Point/Trump_mixed0060.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Point/Trump_mixed0061.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Point/Trump_mixed0062.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Point/Trump_mixed0063.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Point/Trump_mixed0064.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Point/Trump_mixed0065.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Point/Trump_mixed0066.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Point/Trump_mixed0067.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Point/Trump_mixed0068.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Point/Trump_mixed0069.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Medium/Point/Trump_mixed0070.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0001.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0002.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0003.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0004.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0005.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0006.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0007.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0008.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0009.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0010.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0011.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0012.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0013.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0014.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0015.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0016.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0017.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0018.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0019.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0020.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0021.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0022.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0023.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0024.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Foot Tap/Trump_mixed0025.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0084.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0085.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0086.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0087.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0088.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0089.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0090.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0091.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0092.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0093.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0094.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0095.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0096.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0097.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0098.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0099.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0101.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0102.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0103.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0104.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0105.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0106.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0107.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/music/animator/Animations/Trump/Slow/Slide/Trump_mixed0108.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/music/animator/AnimationBuilder.java" afterPath="$PROJECT_DIR$/src/com/music/animator/AnimationBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/music/animator/MusicPlayer.java" afterPath="$PROJECT_DIR$/src/com/music/animator/MusicPlayer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/music/animator/animationScreen.java" afterPath="$PROJECT_DIR$/src/com/music/animator/animationScreen.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -298,40 +19,6 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="AnimationBuilder.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/com/music/animator/AnimationBuilder.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1326">
-                    <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="animationScreen.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/com/music/animator/animationScreen.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="527">
-                    <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-                    <folding>
-                      <element signature="method#takeScreenShot#0;class#animationScreen#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -353,11 +40,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeatDetector.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="animationScreen.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/music/animator/animationScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="131" column="45" selection-start-line="131" selection-start-column="45" selection-end-line="131" selection-end-column="45" />
+              <folding>
+                <element signature="method#takeScreenShot#0;class#animationScreen#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnimationBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/music/animator/AnimationBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-34">
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BeatDetector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/music/animator/BeatDetector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+            <state relative-caret-position="272">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -378,8 +89,8 @@
       <file leaf-file-name="MusicPlayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/music/animator/MusicPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="665">
+              <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -434,14 +145,14 @@
         <option value="$PROJECT_DIR$/src/com/music/animator/TestMainScreen.java" />
         <option value="$PROJECT_DIR$/src/com/music/animator/Main.java" />
         <option value="$PROJECT_DIR$/src/com/music/animator/screenShotPanel.java" />
-        <option value="$PROJECT_DIR$/src/com/music/animator/MusicPlayer.java" />
         <option value="$PROJECT_DIR$/src/com/music/animator/DrawingInterface.java" />
         <option value="$PROJECT_DIR$/src/com/music/animator/BeatDetector.java" />
-        <option value="$PROJECT_DIR$/src/com/music/animator/animationScreen.java" />
-        <option value="$PROJECT_DIR$/src/com/music/animator/AnimationBuilder.java" />
         <option value="$PROJECT_DIR$/src/com/music/animator/DrawingPanel.java" />
         <option value="$PROJECT_DIR$/src/com/music/animator/MainScreen.java" />
         <option value="$PROJECT_DIR$/src/com/music/animator/ImageLoader.java" />
+        <option value="$PROJECT_DIR$/src/com/music/animator/AnimationBuilder.java" />
+        <option value="$PROJECT_DIR$/src/com/music/animator/MusicPlayer.java" />
+        <option value="$PROJECT_DIR$/src/com/music/animator/animationScreen.java" />
       </list>
     </option>
   </component>
@@ -502,6 +213,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Music-Animator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Music-Animator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Music-Animator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="animator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1165,7 +894,7 @@
       <workItem from="1491526305057" duration="101000" />
       <workItem from="1492386409725" duration="4580000" />
       <workItem from="1492393026796" duration="1196000" />
-      <workItem from="1492446107101" duration="11127000" />
+      <workItem from="1492446107101" duration="13826000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Animation Builder Commit">
       <created>1490549518581</created>
@@ -1244,11 +973,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492460687729</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Aniamtions added">
+      <created>1492460829147</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1492460829147</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42432000" />
+    <option name="totallyTimeSpent" value="45131000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1261,7 +997,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1275,7 +1011,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1765625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1765625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1318,7 +1054,8 @@
     <MESSAGE value="Animation system broken, still fixing animation chooser" />
     <MESSAGE value="Animation done" />
     <MESSAGE value="Image path fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Image path fix" />
+    <MESSAGE value="Aniamtions added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aniamtions added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1516,16 +1253,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/music/animator/AnimationBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/music/animator/DrawingPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1548,14 +1275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/music/animator/MusicPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/music/animator/ImageLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1564,22 +1283,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/music/animator/animationScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/com/music/animator/BeatDetector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        <state relative-caret-position="272">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding>
-            <element signature="method#takeScreenShot#0;class#animationScreen#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/music/animator/BeatDetector.java">
+    <entry file="file://$PROJECT_DIR$/src/com/music/animator/AnimationBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+        <state relative-caret-position="-34">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/music/animator/MusicPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/music/animator/animationScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="131" column="45" selection-start-line="131" selection-start-column="45" selection-end-line="131" selection-end-column="45" />
+          <folding>
+            <element signature="method#takeScreenShot#0;class#animationScreen#0" expanded="false" />
           </folding>
         </state>
       </provider>
