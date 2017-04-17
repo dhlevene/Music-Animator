@@ -74,14 +74,13 @@ public class MainScreen extends JPanel implements ActionListener
         right = new JPanel();
         //bottom = new JPanel();
 
-        String songListArray[] = {"Song 1", "Song 4", "Song 3"};
+        String songListArray[] = {"preselected_songs/Shape_of_you.wav", "preselected_songs/Shape_of_you.mp3"};
 
         songsList = new JComboBox(songListArray);
 
         songsList.setBounds(50, 50, 90, 20);
 
         right.add(songsList);
-
 
 
         mainPanel.setPreferredSize(new Dimension(800,600));
