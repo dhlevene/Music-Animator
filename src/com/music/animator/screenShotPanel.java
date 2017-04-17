@@ -197,7 +197,7 @@ public class screenShotPanel extends JPanel implements ActionListener {
             BodyPart emailText = new MimeBodyPart();
 
             // Text for the body of the email in html format
-            String textInHTML = "<H3>Here is your screenshot of your dancing animation!!</H3><img src=\"cid:image\">";
+            String textInHTML = "<H4>Here is your screenshot of your dancing animation!!</H4><img src=\"cid:image\">";
 
             // set the message content to have the html text
             emailText.setContent(textInHTML, "text/html");
@@ -209,7 +209,9 @@ public class screenShotPanel extends JPanel implements ActionListener {
             emailText = new MimeBodyPart();
 
             // This is temporarily grabbing an image from my desktop and adding it to the message
-            FileDataSource fds = new FileDataSource("/Users/jamesharrison/Desktop/Harambe.png");
+           // FileDataSource fds = new FileDataSource("/Users/jamesharrison/Desktop/Harambe.png");
+            FileDataSource fds = new FileDataSource("Your Screenshot.png");
+
             emailText.setDataHandler(new DataHandler(fds));
 
             // Set the value for the header to an image

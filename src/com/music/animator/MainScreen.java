@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-
+import javax.swing.filechooser.FileNameExtensionFilter;
 /**
  * Created by Damian Suski on 3/19/2017.
  */
@@ -99,6 +99,10 @@ public class MainScreen extends JPanel implements ActionListener{
             {
                 // New file chooser to allow the user to select a song
                 JFileChooser fileChooser = new JFileChooser();
+
+                FileNameExtensionFilter filter = new FileNameExtensionFilter("Wave .wav or MIDI .mid", "wav","mid");
+                fileChooser.addChoosableFileFilter(filter);
+                fileChooser.setFileFilter(filter);
 
                 // If yes/ok is selected by the user, return the file
                 if (fileChooser.APPROVE_OPTION == fileChooser.showOpenDialog(null))
