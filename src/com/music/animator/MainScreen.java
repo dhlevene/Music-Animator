@@ -39,14 +39,18 @@ public class MainScreen extends JPanel implements ActionListener
         init();
 
         top.add(animatedMusicDancer);
-        right.add(audio);
         left.add(dancer);
 
         bottom.add(startAnimationButton);
         left.add(humanDancer);
         left.add(animalDancer);
-        right.add(selectAudioButton);
-        right.add(uploadAudioButton);
+
+        selectAudioButton.setPreferredSize(new Dimension(150, 50));
+        uploadAudioButton.setPreferredSize(new Dimension(150, 50));
+        right.add(songsList, FlowLayout.LEFT);
+        right.add(uploadAudioButton, FlowLayout.LEFT);
+        right.add(selectAudioButton, FlowLayout.LEFT);
+        right.add(audio);
 
         //left = new JPanel();
         //add(left);
@@ -79,8 +83,6 @@ public class MainScreen extends JPanel implements ActionListener
         songsList = new JComboBox(songListArray);
 
         songsList.setBounds(50, 50, 90, 20);
-
-        right.add(songsList);
 
 
 
@@ -149,8 +151,6 @@ public class MainScreen extends JPanel implements ActionListener
                 {
                     System.out.println("File Not Selected");
                 }
-
-
             }
         });
 
