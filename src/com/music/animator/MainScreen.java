@@ -133,6 +133,7 @@ public class MainScreen extends JPanel implements ActionListener{
             public void actionPerformed(ActionEvent e) {
                 //this.add(new DancerSelection());
                 remove(mainPanel);
+                //mainPanel.setVisible(false);
                 add(new animationScreen());
                 validate();
 
