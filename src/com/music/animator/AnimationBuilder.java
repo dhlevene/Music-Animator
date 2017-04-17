@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class AnimationBuilder {
 
-    private static final int SAMPLE_SECONDS = 2; /*Goes n seconds before and after current frame for median value*/
+    private static final int SAMPLE_SECONDS = 3; /*Goes n seconds before and after current frame for median value*/
     private int[] beatArray; /*Stores the beats from the beat detector class*/
     private AnimationLoop currentAnimation;
     private ImageLoader imageLoader;
@@ -22,6 +22,8 @@ public class AnimationBuilder {
     public AnimationBuilder(int[] beatArray, int character){
         this.beatArray = beatArray;
         imageLoader = new ImageLoader(character);
+
+        System.out.println(Arrays.toString(beatArray));
 
         /*Find maximum and minimum values*/
         for(int i=0;i<beatArray.length;i++){
@@ -46,24 +48,25 @@ public class AnimationBuilder {
 
     public void cycleAnimationLoop(int songTime){
         int medianBPM;
-        int start=songTime-stratifyAmount;
-        int end=songTime+stratifyAmount;
+        int start=songTime-SAMPLE_SECONDS;
+        int end=songTime+SAMPLE_SECONDS;
         int counter;
         int[] segment;
         Random random = new Random(System.nanoTime());
 
         currentFrame = 0;
 
+        /*
         if(songTime - SAMPLE_SECONDS < 0)
             start = 0;
         if(songTime + SAMPLE_SECONDS >= beatArray.length)
             end = beatArray.length-1;
 
-        /*Find the median*/
+        /*Find the median*//*
         segment = new int[end - start];
         counter=0;
 
-        for(int i=start;i<=end;i++){
+        for(int i=start;i<end;i++){
             segment[counter] = beatArray[i];
             counter++;
         }
@@ -75,12 +78,13 @@ public class AnimationBuilder {
 
         else
             medianBPM = segment[0];
+        */
 
         /*Add animationLoop logic*/
-        if(medianBPM<stratifyAmount+minBPM){
+        if(beatArray[songTime]<stratifyAmount+minBPM){
             currentAnimation = imageLoader.get_slow().get(random.nextInt(imageLoader.get_slow().size()));
         }
-        else if(medianBPM<stratifyAmount*2+minBPM){
+        else if(beatArray[songTime]<stratifyAmount*2+minBPM){
             currentAnimation = imageLoader.get_medium().get(random.nextInt(imageLoader.get_medium().size()));
         }
         else {
