@@ -23,8 +23,6 @@ import java.net.URL;
 */
 public class animationScreen extends JPanel implements ActionListener {
 
-    Timer timer = new Timer(10,this);
-
     private JPanel mainPanel;
     private JPanel left;
     private JPanel right;
@@ -48,7 +46,7 @@ public class animationScreen extends JPanel implements ActionListener {
         setFocusable(true);
         requestFocus();
 
-        timer.start();
+        //timer.start();
     }
 
     public void init()
@@ -117,6 +115,7 @@ public class animationScreen extends JPanel implements ActionListener {
                 remove(mainPanel);
                 add(new MainScreen());
                 validate();
+                MusicPlayer.pause();
             }
         });
 

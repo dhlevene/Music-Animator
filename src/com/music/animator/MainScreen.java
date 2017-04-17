@@ -13,9 +13,9 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 /**
  * Created by Damian Suski on 3/19/2017.
  */
-public class MainScreen extends JPanel implements ActionListener
-{
-    Timer timer = new Timer(10,this);
+public class MainScreen extends JPanel implements ActionListener{
+
+    Timer timer = new Timer(125,this);
 
     private JPanel mainPanel;
     private JPanel top;
@@ -31,11 +31,8 @@ public class MainScreen extends JPanel implements ActionListener
     private JLabel dancer;
     private JLabel audio;
     private File song;
-    private JComboBox songsList;
 
-
-    public MainScreen()
-    {
+    public MainScreen(){
         init();
 
         top.add(animatedMusicDancer);
@@ -73,16 +70,6 @@ public class MainScreen extends JPanel implements ActionListener
         left = new JPanel();
         right = new JPanel();
         //bottom = new JPanel();
-
-        String songListArray[] = {"Song 1", "Song 4", "Song 3"};
-
-        songsList = new JComboBox(songListArray);
-
-        songsList.setBounds(50, 50, 90, 20);
-
-        right.add(songsList);
-
-
 
         mainPanel.setPreferredSize(new Dimension(800,600));
         top.setPreferredSize(new Dimension(800,100));

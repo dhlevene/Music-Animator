@@ -20,8 +20,7 @@ public class ImageLoader {
     /*For testing purposes use the SPEEDS[] with only "Slow/"
     * until we get all the Speed Files for either character
     * */
-    public static final String[] SPEEDS = {"Slow/"};
-    //public static final String[] SPEEDS = {"Slow/", "Medium/", "Fast/"};
+    public static final String[] SPEEDS = {"Slow/", "Medium/", "Fast/"};
 
     private ArrayList<AnimationLoop> _slow;
     private ArrayList<AnimationLoop> _medium;
@@ -107,13 +106,12 @@ public class ImageLoader {
     }
 
     public void  verification(){
-        if (_slow != null) {
+        if (_slow != null)
             System.out.println("Slow list size: " + _slow.size());
-        } else if (_medium != null) {
+        if (_medium != null)
             System.out.println("medium list size: " + _medium.size());
-        } else if (_fast != null) {
+        if (_fast != null)
             System.out.println("Fast list size: " + _fast.size());
-        }
     }
 
     public ArrayList<AnimationLoop> get_slow() {
