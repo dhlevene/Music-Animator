@@ -78,6 +78,8 @@ public class MainScreen extends JPanel implements ActionListener
 
         songsList = new JComboBox(songListArray);
 
+        songsList.setVisible(false);
+
         songsList.setBounds(50, 50, 90, 20);
 
         right.add(songsList);
@@ -121,11 +123,28 @@ public class MainScreen extends JPanel implements ActionListener
         uploadAudioButton = new JButton("Upload Audio");
 
 
+        selectAudioButton.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                songsList.setVisible(true);
+
+            }
+        });
+
         // Once the user presses the upload audio button, they can select a song from their computer
         uploadAudioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e)
             {
+
+                if (songsList.isVisible())
+                {
+                    songsList.setVisible(false);
+                }
+
+                
                 // New file chooser to allow the user to select a song
                 JFileChooser fileChooser = new JFileChooser();
 
