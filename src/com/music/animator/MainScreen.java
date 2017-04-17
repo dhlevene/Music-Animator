@@ -15,7 +15,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
  */
 public class MainScreen extends JPanel implements ActionListener
 {
-    Timer timer = new Timer(10,this);
+    Timer timer = new Timer(125,this);
 
     private JPanel mainPanel;
     private JPanel top;

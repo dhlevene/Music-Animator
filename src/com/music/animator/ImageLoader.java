@@ -25,7 +25,7 @@ public class ImageLoader {
     private ArrayList<AnimationLoop> _slow;
     private ArrayList<AnimationLoop> _medium;
     private ArrayList<AnimationLoop> _fast;
-    private static String _fileName = "src/com/music/animator/Animations/";
+    private static final String _fileName = "src/com/music/animator/Animations/";
 
     public ImageLoader(int characterSelected) {
         _character = characterSelected;
@@ -34,11 +34,9 @@ public class ImageLoader {
         _fast = new ArrayList<AnimationLoop>();
 
         if (_character == TRUMP) {
-            _fileName =_fileName + "Trump/";
-            traverseFile(_fileName);
+            traverseFile(_fileName + "Trump/");
         } else if (_character == HARAMBE){
-            _fileName =_fileName + "Harambe/";
-            traverseFile(_fileName);
+            traverseFile(_fileName + "Harambe/");
         } else {
             System.out.println("Invalid character selection.");
         }
