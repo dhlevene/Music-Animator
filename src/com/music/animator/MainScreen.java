@@ -78,7 +78,9 @@ public class MainScreen extends JPanel implements ActionListener
         right = new JPanel();
         //bottom = new JPanel();
 
-        String songListArray[] = {"preselected_songs/Shape_of_you.wav", "preselected_songs/Shape_of_you.mp3"};
+        String songListArray[] = {"Spooky Scary", "Harlem Shake", "Catch Me", "Lone Digger", "Sweet Dreams",
+                                  "Now You're Gone", "Girlfriend", "Poker Face", "Shake it", "Levels", "I Will Wait",
+                                  "Blue", "Staying Alive", "Dragostea Din Tei"};
 
         songsList = new JComboBox(songListArray);
 
@@ -108,6 +110,7 @@ public class MainScreen extends JPanel implements ActionListener
         startAnimationButton = new JButton("Start Animation");
         humanDancer = new JToggleButton("     TRUMP     "); // This Button Should contain the image of the Dancer
         humanDancer.setSelected(true);
+
         humanDancer.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
@@ -115,6 +118,8 @@ public class MainScreen extends JPanel implements ActionListener
                     animalDancer.setSelected(false);
             }
         });
+
+
         animalDancer = new JToggleButton("HARAMBE");        //This button should contain the image of the Dancer
         animalDancer.addItemListener(new ItemListener() {
             @Override
@@ -123,9 +128,10 @@ public class MainScreen extends JPanel implements ActionListener
                     humanDancer.setSelected(false);
             }
         });
+
+
         selectAudioButton = new JButton("Select Song");
         uploadAudioButton = new JButton("Upload Audio");
-
 
         selectAudioButton.addActionListener(new ActionListener()
         {
@@ -133,6 +139,10 @@ public class MainScreen extends JPanel implements ActionListener
             public void actionPerformed(ActionEvent e)
             {
                 songsList.setVisible(true);
+
+                String choosenSong = "" +songsList.getSelectedItem().toString() + ".wav";
+
+                song = new File(choosenSong);
 
             }
         });
