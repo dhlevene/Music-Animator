@@ -78,9 +78,9 @@ public class MainScreen extends JPanel implements ActionListener
         right = new JPanel();
         //bottom = new JPanel();
 
-        String songListArray[] = {"Spooky Scary", "Harlem Shake", "Catch Me", "Lone Digger", "Sweet Dreams",
+        String songListArray[] = {"Spooky Scary Skeleton", "Harlem Shake", "Catch Me", "Lone Digger", "Sweet Dreams",
                                   "Now You're Gone", "Girlfriend", "Poker Face", "Shake it", "Levels", "I Will Wait",
-                                  "Blue", "Staying Alive", "Dragostea Din Tei"};
+                                  "Blue", "Staying Alive", "Dragostea Din Tei", "Jessie's Girl"};
 
         songsList = new JComboBox(songListArray);
 
@@ -140,7 +140,7 @@ public class MainScreen extends JPanel implements ActionListener
             {
                 songsList.setVisible(true);
 
-                String choosenSong = "" +songsList.getSelectedItem().toString() + ".wav";
+                String choosenSong = "src/com/music/animator/preselected_songs/" + songsList.getSelectedItem().toString() + ".wav";
 
                 song = new File(choosenSong);
 
