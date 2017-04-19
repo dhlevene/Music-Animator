@@ -78,7 +78,7 @@ public class MainScreen extends JPanel implements ActionListener
         right = new JPanel();
         //bottom = new JPanel();
 
-        String songListArray[] = {"Spooky Scary Skeleton", "Harlem Shake", "Catch Me", "Lone Digger", "Sweet Dreams",
+        String songListArray[] = {"","Spooky Scary Skeleton", "Harlem Shake", "Catch Me", "Lone Digger", "Sweet Dreams",
                                   "Now You're Gone", "Girlfriend", "Poker Face", "Shake it", "Levels", "I Will Wait",
                                   "Blue", "Staying Alive", "Dragostea Din Tei", "Jessie's Girl"};
 
@@ -108,7 +108,7 @@ public class MainScreen extends JPanel implements ActionListener
         mainPanel.add(bottom, BorderLayout.SOUTH);
 
         startAnimationButton = new JButton("Start Animation");
-        humanDancer = new JToggleButton(" TRUMP "); // This Button Should contain the image of the Dancer
+        humanDancer = new JToggleButton(" Human "); // This Button Should contain the image of the Dancer
         humanDancer.setSelected(true);
 
         humanDancer.addItemListener(new ItemListener() {
@@ -120,7 +120,7 @@ public class MainScreen extends JPanel implements ActionListener
         });
 
 
-        animalDancer = new JToggleButton("HARAMBE");        //This button should contain the image of the Dancer
+        animalDancer = new JToggleButton("Gorilla");        //This button should contain the image of the Dancer
         animalDancer.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {

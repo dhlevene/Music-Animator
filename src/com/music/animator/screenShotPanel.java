@@ -62,13 +62,13 @@ public class screenShotPanel extends JPanel implements ActionListener {
         actionPanel = new JPanel();
 
         // Set sizes and titles of JPanels
-        picturePanel.setPreferredSize(new Dimension(400,380));
-        picturePanel.setBorder(BorderFactory.createTitledBorder("ScreenShot"));
+        //picturePanel.setPreferredSize(new Dimension(400,380));
+        //picturePanel.setBorder(BorderFactory.createTitledBorder("ScreenShot"));
         actionPanel.setPreferredSize(new Dimension(200,380));
         actionPanel.setBorder(BorderFactory.createTitledBorder("Options"));
 
         // Set panel to the left of frame
-        this.add(picturePanel, BorderLayout.WEST);
+        //this.add(picturePanel, BorderLayout.WEST);
 
         // Set panel to right of frame
         this.add(actionPanel, BorderLayout.EAST);
