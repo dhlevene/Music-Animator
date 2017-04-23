@@ -93,7 +93,7 @@ public class AnimationBuilder {
             currentAnimation = imageLoader.get_fast().get(random.nextInt(imageLoader.get_fast().size()));
         }*/
 
-        int choice = random.nextInt(2);
+        int choice = random.nextInt(3);
 
         if(choice==0){
             currentAnimation = imageLoader.get_slow().get(random.nextInt(imageLoader.get_slow().size()));

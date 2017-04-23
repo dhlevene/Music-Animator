@@ -31,7 +31,7 @@ public class MainScreen extends JPanel implements ActionListener
     private JLabel dancer;
     private JLabel audio;
     private File song;
-    private JComboBox songsList;
+    private JComboBox songComboBox;
 
 
     public MainScreen()
@@ -47,7 +47,7 @@ public class MainScreen extends JPanel implements ActionListener
         
         selectAudioButton.setPreferredSize(new Dimension(150, 50));
         uploadAudioButton.setPreferredSize(new Dimension(150, 50));
-        right.add(songsList, FlowLayout.LEFT);
+        right.add(songComboBox, FlowLayout.LEFT);
         right.add(uploadAudioButton, FlowLayout.LEFT);
         right.add(selectAudioButton, FlowLayout.LEFT);
         right.add(audio);
@@ -78,17 +78,17 @@ public class MainScreen extends JPanel implements ActionListener
         right = new JPanel();
         //bottom = new JPanel();
 
-        String songListArray[] = {"Spooky Scary Skeleton", "Harlem Shake", "Catch Me", "Lone Digger", "Sweet Dreams",
+        String songListArray[] = {"","Spooky Scary Skeleton", "Harlem Shake", "Catch Me", "Lone Digger", "Sweet Dreams",
                                   "Now You're Gone", "Girlfriend", "Poker Face", "Shake it", "Levels", "I Will Wait",
                                   "Blue", "Staying Alive", "Dragostea Din Tei", "Jessie's Girl"};
 
-        songsList = new JComboBox(songListArray);
+        songComboBox = new JComboBox(songListArray);
 
-        songsList.setVisible(false);
+        songComboBox.setVisible(false);
 
-        songsList.setBounds(50, 50, 90, 20);
+        songComboBox.setBounds(50, 50, 90, 20);
 
-        right.add(songsList);
+        right.add(songComboBox);
 
 
         mainPanel.setPreferredSize(new Dimension(800,600));
@@ -108,7 +108,7 @@ public class MainScreen extends JPanel implements ActionListener
         mainPanel.add(bottom, BorderLayout.SOUTH);
 
         startAnimationButton = new JButton("Start Animation");
-        humanDancer = new JToggleButton("     HUMAN     "); // This Button Should contain the image of the Dancer
+        humanDancer = new JToggleButton(" Human "); // This Button Should contain the image of the Dancer
         humanDancer.setSelected(true);
 
         humanDancer.addItemListener(new ItemListener() {
@@ -138,12 +138,17 @@ public class MainScreen extends JPanel implements ActionListener
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                songsList.setVisible(true);
+                songComboBox.setVisible(true);
+                songComboBox.addItemListener(new ItemListener() {
+                    @Override
+                    public void itemStateChanged(ItemEvent e) {
+                        String selectedSong = songListArray[songComboBox.getSelectedIndex()];
+                        System.out.println("Song chosen " + songComboBox.getSelectedIndex());
+                        String chosenSong = "src/com/music/animator/preselected_songs/" + selectedSong + ".wav";
 
-                String choosenSong = "src/com/music/animator/preselected_songs/" + songsList.getSelectedItem().toString() + ".wav";
-
-                song = new File(choosenSong);
-
+                        song = new File(chosenSong);
+                    }
+                });
             }
         });
 
@@ -153,12 +158,12 @@ public class MainScreen extends JPanel implements ActionListener
             public void actionPerformed(ActionEvent e)
             {
 
-                if (songsList.isVisible())
+                if (songComboBox.isVisible())
                 {
-                    songsList.setVisible(false);
+                    songComboBox.setVisible(false);
                 }
 
-                
+
                 // New file chooser to allow the user to select a song
                 JFileChooser fileChooser = new JFileChooser();
 

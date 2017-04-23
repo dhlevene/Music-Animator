@@ -61,7 +61,7 @@ public class animationScreen extends JPanel implements ActionListener {
 
 
         try {
-            animationBox = new DrawingPanel(new AnimationBuilder(BeatDetector.ReadFile(song),character));
+            animationBox = new DrawingPanel(new AnimationBuilder(new int[1],character));
         } catch (Exception e) {
             e.printStackTrace();
         }

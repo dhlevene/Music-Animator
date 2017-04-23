@@ -4,6 +4,7 @@ package com.music.animator;
 
 import javax.activation.DataHandler;
 import javax.activation.FileDataSource;
+import javax.imageio.ImageIO;
 import javax.mail.internet.*;
 import javax.sql.DataSource;
 import javax.swing.*;
@@ -11,6 +12,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.IOException;
 import java.util.Properties;
 import javax.mail.*;
 
@@ -23,7 +25,7 @@ public class screenShotPanel extends JPanel implements ActionListener {
     // Gmail credentials, for SoFloDev@gmail.com with the password
     private static String EMAIL_ADDRESS = "SoFloDev";
     private static String EMAIL_PASSWORD = "Soflodev123";
-
+    
     // Left Panel
     JPanel picturePanel;
 
@@ -50,7 +52,6 @@ public class screenShotPanel extends JPanel implements ActionListener {
         actionPanel.add(emailInput);
         actionPanel.add(emailButton);
         actionPanel.add(menuButton);
-
     }
 
     public void init()
@@ -61,13 +62,13 @@ public class screenShotPanel extends JPanel implements ActionListener {
         actionPanel = new JPanel();
 
         // Set sizes and titles of JPanels
-        picturePanel.setPreferredSize(new Dimension(400,380));
-        picturePanel.setBorder(BorderFactory.createTitledBorder("ScreenShot"));
+        //picturePanel.setPreferredSize(new Dimension(400,380));
+        //picturePanel.setBorder(BorderFactory.createTitledBorder("ScreenShot"));
         actionPanel.setPreferredSize(new Dimension(200,380));
         actionPanel.setBorder(BorderFactory.createTitledBorder("Options"));
 
         // Set panel to the left of frame
-        this.add(picturePanel, BorderLayout.WEST);
+        //this.add(picturePanel, BorderLayout.WEST);
 
         // Set panel to right of frame
         this.add(actionPanel, BorderLayout.EAST);
