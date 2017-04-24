@@ -26,5 +26,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="javax.mail-1.5.6" level="project" />
+    <orderEntry type="library" name="JTransforms-3.1-with-dependencies" level="project" />
   </component>
 </module>

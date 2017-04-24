@@ -7,8 +7,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
 import javax.swing.filechooser.FileNameExtensionFilter;
 /**
  * Created by Damian Suski on 3/19/2017.

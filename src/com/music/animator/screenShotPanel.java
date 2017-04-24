@@ -1,18 +1,13 @@
 package com.music.animator;
 
-//import com.sun.tools.javah.Util;
 
 import javax.activation.DataHandler;
 import javax.activation.FileDataSource;
-import javax.imageio.ImageIO;
 import javax.mail.internet.*;
-import javax.sql.DataSource;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.IOException;
 import java.util.Properties;
 import javax.mail.*;
 

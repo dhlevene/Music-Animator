@@ -1,7 +1,7 @@
 package com.music.animator;
 
 import javax.imageio.ImageIO;
-import javax.sound.sampled.UnsupportedAudioFileException;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,7 +10,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.URL;
+
 
 /**
  * Created by mende on 3/26/2017.
