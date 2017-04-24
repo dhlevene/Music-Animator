@@ -22,7 +22,7 @@ public class DrawingPanel extends JPanel implements ActionListener
     private Image background;
     private static final String path = "src/com/music/animator/curtains.jpg";
 
-    public DrawingPanel(AnimationBuilder animationBuilder
+    public DrawingPanel(AnimationBuilder animationBuilder)
     {
         timer = new Timer(250,this);
         this.animationBuilder = animationBuilder;
