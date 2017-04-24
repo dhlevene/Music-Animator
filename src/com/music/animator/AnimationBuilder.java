@@ -14,8 +14,8 @@ public class AnimationBuilder {
     private ImageLoader imageLoader;
 
     private int stratifyAmount; /*1/3 value between minimum BPM and max*/
-    private int minBPM=0;
-    private int maxBPM=0;
+    private int minBPM=Integer.MAX_VALUE;
+    private int maxBPM=Integer.MIN_VALUE;
     private int currentFrame;
 
 
@@ -56,13 +56,13 @@ public class AnimationBuilder {
 
         currentFrame = 0;
 
-        /*
+
         if(songTime - SAMPLE_SECONDS < 0)
             start = 0;
         if(songTime + SAMPLE_SECONDS >= beatArray.length)
             end = beatArray.length-1;
 
-        /*Find the median*//*
+        /*Find the median*/
         segment = new int[end - start];
         counter=0;
 
@@ -71,18 +71,18 @@ public class AnimationBuilder {
             counter++;
         }
 
-        segment = bubbleSort(segment);
+        bubbleSort(segment);
 
         if(segment.length>SAMPLE_SECONDS+1)
             medianBPM = segment[SAMPLE_SECONDS+1];
 
         else
             medianBPM = segment[0];
-        */
+
 
 
         /*Add animationLoop logic*/
-        /*
+
         if(beatArray[songTime]<stratifyAmount+minBPM){
             currentAnimation = imageLoader.get_slow().get(random.nextInt(imageLoader.get_slow().size()));
         }
@@ -91,14 +91,12 @@ public class AnimationBuilder {
         }
         else {
             currentAnimation = imageLoader.get_fast().get(random.nextInt(imageLoader.get_fast().size()));
-        }*/
+        }
 
-        int choice = random.nextInt(3);
-
-        if(choice==0){
+        if(medianBPM<minBPM+stratifyAmount){
             currentAnimation = imageLoader.get_slow().get(random.nextInt(imageLoader.get_slow().size()));
         }
-        else if(choice==1){
+        else if(medianBPM<stratifyAmount){
             currentAnimation = imageLoader.get_medium().get(random.nextInt(imageLoader.get_medium().size()));
         }
         else {
@@ -107,7 +105,7 @@ public class AnimationBuilder {
     }
 
     /*Bubble sort*/
-    private int[] bubbleSort(int[] oldArray){
+    private void bubbleSort(int[] oldArray){
 
         int temp;
 
@@ -120,7 +118,5 @@ public class AnimationBuilder {
                 }
             }
         }
-
-        return oldArray;
     }
 }
