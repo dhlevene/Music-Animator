@@ -4,10 +4,11 @@ import java.io.*;
 import javax.sound.sampled.*;
 import javax.sound.sampled.AudioFormat.*;
 import java.nio.*;
+import org.jtransforms.fft.DoubleFFT_1D;
 
 public class BeatDetector
 {
-        public static int[] ReadFile(File file) throws UnsupportedAudioFileException, IOException,InterruptedException
+        public static double[] ReadFile(File file) throws UnsupportedAudioFileException, IOException,InterruptedException
         {
             AudioInputStream in = AudioSystem.getAudioInputStream(file);
             AudioFormat format = in.getFormat();
@@ -67,24 +68,32 @@ public class BeatDetector
                     default: throw new UnsupportedAudioFileException();
                 }
             }
-            //System.out.println(Math.log(samples.length)/Math.log(2));
-            double[] imagPart = new double[samples.length];
-
-            FFTbase testing = new FFTbase();
-            double [] trash = testing.fft(samples,imagPart,true);
-            double [] freq = new double[trash.length];
-
-            for(int i = 0; i < trash.length; i++)
-            {
-                freq[i] = trash[i]* format.getFrameRate() / format.getFrameSize();
+            DoubleFFT_1D fft = new DoubleFFT_1D(samples.length);
+            double[] fftData = new double[samples.length * 2];
+            for (int i = 0; i < samples.length; i++) {
+                // copying audio data to the fft data buffer, imaginary part is 0
+                fftData[2 * i] = audio[i];
+                fftData[2 * i + 1] = 0;
             }
 
-            int[] beatArray = new int[ freq.length /(int) format.getSampleRate()];
+            // calculating the fft of the data, so we will have spectral power of each frequency component
+            // fft resolution (number of bins) is samplesNum, because we initialized with that value
+            fft.complexForward(fftData);
 
-            for(int i=0;i<beatArray.length-1;i++)
-                beatArray[i] = (int) freq[i*(int)format.getSampleRate()];
 
-            return beatArray;
+
+            //FFTbase testing = new FFTbase();
+            //double [] trash = testing.fft(samples,imagPart,true);
+            double [] freq = new double[fftData.length];
+
+            for(int i = 0; i < freq.length; i++)
+            {
+                freq[i] = fftData[i]* format.getFrameRate() / format.getFrameSize();
+                System.out.println(freq[i]);
+            }
+
+
+            return freq;
         }
 
 
