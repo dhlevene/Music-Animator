@@ -83,20 +83,10 @@ public class AnimationBuilder {
 
         /*Add animationLoop logic*/
 
-        if(beatArray[songTime]<stratifyAmount+minBPM){
+        if(medianBPM<stratifyAmount+minBPM){
             currentAnimation = imageLoader.get_slow().get(random.nextInt(imageLoader.get_slow().size()));
         }
-        else if(beatArray[songTime]<stratifyAmount*2+minBPM){
-            currentAnimation = imageLoader.get_medium().get(random.nextInt(imageLoader.get_medium().size()));
-        }
-        else {
-            currentAnimation = imageLoader.get_fast().get(random.nextInt(imageLoader.get_fast().size()));
-        }
-
-        if(medianBPM<minBPM+stratifyAmount){
-            currentAnimation = imageLoader.get_slow().get(random.nextInt(imageLoader.get_slow().size()));
-        }
-        else if(medianBPM<stratifyAmount){
+        else if(medianBPM<stratifyAmount*2+minBPM){
             currentAnimation = imageLoader.get_medium().get(random.nextInt(imageLoader.get_medium().size()));
         }
         else {

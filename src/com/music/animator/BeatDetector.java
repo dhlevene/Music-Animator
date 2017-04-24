@@ -4,11 +4,10 @@ import java.io.*;
 import javax.sound.sampled.*;
 import javax.sound.sampled.AudioFormat.*;
 import java.nio.*;
-import org.jtransforms.fft.DoubleFFT_1D;
 
 public class BeatDetector
 {
-        public static double[] ReadFile(File file) throws UnsupportedAudioFileException, IOException,InterruptedException
+        public static int[] ReadFile(File file) throws UnsupportedAudioFileException, IOException,InterruptedException
         {
             AudioInputStream in = AudioSystem.getAudioInputStream(file);
             AudioFormat format = in.getFormat();
@@ -68,7 +67,8 @@ public class BeatDetector
                     default: throw new UnsupportedAudioFileException();
                 }
             }
-            DoubleFFT_1D fft = new DoubleFFT_1D(samples.length);
+
+
             double[] fftData = new double[samples.length * 2];
             for (int i = 0; i < samples.length; i++) {
                 // copying audio data to the fft data buffer, imaginary part is 0
@@ -76,19 +76,16 @@ public class BeatDetector
                 fftData[2 * i + 1] = 0;
             }
 
-            // calculating the fft of the data, so we will have spectral power of each frequency component
-            // fft resolution (number of bins) is samplesNum, because we initialized with that value
-            fft.complexForward(fftData);
 
 
 
             //FFTbase testing = new FFTbase();
             //double [] trash = testing.fft(samples,imagPart,true);
-            double [] freq = new double[fftData.length];
+            int [] freq = new int[fftData.length];
 
             for(int i = 0; i < freq.length; i++)
             {
-                freq[i] = fftData[i]* format.getFrameRate() / format.getFrameSize();
+                freq[i] = (int)(fftData[i]* format.getFrameRate() / format.getFrameSize());
                 System.out.println(freq[i]);
             }
 
