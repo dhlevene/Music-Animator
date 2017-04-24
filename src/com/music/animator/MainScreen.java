@@ -109,9 +109,11 @@ public class MainScreen extends JPanel implements ActionListener
         humanDancer = new JToggleButton(" Human "); // This Button Should contain the image of the Dancer
         humanDancer.setSelected(true);
 
-        humanDancer.addItemListener(new ItemListener() {
+        humanDancer.addItemListener(new ItemListener()
+        {
             @Override
-            public void itemStateChanged(ItemEvent e) {
+            public void itemStateChanged(ItemEvent e)
+            {
                 if(e.getStateChange()==ItemEvent.SELECTED)
                     animalDancer.setSelected(false);
             }
@@ -119,9 +121,11 @@ public class MainScreen extends JPanel implements ActionListener
 
 
         animalDancer = new JToggleButton("Gorilla");        //This button should contain the image of the Dancer
-        animalDancer.addItemListener(new ItemListener() {
+        animalDancer.addItemListener(new ItemListener()
+        {
             @Override
-            public void itemStateChanged(ItemEvent e) {
+            public void itemStateChanged(ItemEvent e)
+            {
                 if(e.getStateChange()==ItemEvent.SELECTED)
                     humanDancer.setSelected(false);
             }
@@ -137,9 +141,11 @@ public class MainScreen extends JPanel implements ActionListener
             public void actionPerformed(ActionEvent e)
             {
                 songComboBox.setVisible(true);
-                songComboBox.addItemListener(new ItemListener() {
+                songComboBox.addItemListener(new ItemListener()
+                {
                     @Override
-                    public void itemStateChanged(ItemEvent e) {
+                    public void itemStateChanged(ItemEvent e)
+                    {
                         String selectedSong = songListArray[songComboBox.getSelectedIndex()];
                         System.out.println("Song chosen " + songComboBox.getSelectedIndex());
                         String chosenSong = "src/com/music/animator/preselected_songs/" + selectedSong + ".wav";
@@ -190,9 +196,11 @@ public class MainScreen extends JPanel implements ActionListener
         });
 
 
-        startAnimationButton.addActionListener(new ActionListener() {
+        startAnimationButton.addActionListener(new ActionListener()
+        {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e)
+            {
                 //this.add(new DancerSelection());
                 if(song==null)
                     return;
@@ -210,7 +218,8 @@ public class MainScreen extends JPanel implements ActionListener
     }
 
     /*Takes care of all the rendering, necessary for drawing the animations*/
-    public void paint(Graphics graphics){
+    public void paint(Graphics graphics)
+    {
         super.paint(graphics);
 
     }
@@ -218,11 +227,8 @@ public class MainScreen extends JPanel implements ActionListener
 
     /*Called every time the timer executes (every 10 millis)*/
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e)
+    {
         repaint();
     }
-
-
-
-
 }

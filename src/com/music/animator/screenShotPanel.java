@@ -13,9 +13,10 @@ import javax.mail.*;
 
 
 /**
- * Created by mende on 3/27/2017.
+ * Created by james on 3/27/2017.
  */
-public class screenShotPanel extends JPanel implements ActionListener {
+public class screenShotPanel extends JPanel implements ActionListener
+{
 
     // Gmail credentials, for SoFloDev@gmail.com with the password
     private static String EMAIL_ADDRESS = "SoFloDev";
@@ -95,9 +96,11 @@ public class screenShotPanel extends JPanel implements ActionListener {
         });
 
 
-        menuButton.addActionListener(new ActionListener() {
+        menuButton.addActionListener(new ActionListener()
+        {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e)
+            {
 
                 
             }
@@ -108,7 +111,8 @@ public class screenShotPanel extends JPanel implements ActionListener {
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e)
+    {
 
     }
 

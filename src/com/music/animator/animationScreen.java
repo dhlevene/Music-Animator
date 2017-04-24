@@ -21,7 +21,8 @@ import java.net.MalformedURLException;
     May be changed to whatever seems more appropriate, such as removing the back and menu button, and adding a
     functionality specific to this smaller frame to go back to original animation.
 */
-public class animationScreen extends JPanel implements ActionListener {
+public class animationScreen extends JPanel implements ActionListener
+{
 
     private JPanel mainPanel;
     private JPanel left;
@@ -34,7 +35,8 @@ public class animationScreen extends JPanel implements ActionListener {
     private File song;
     private int character;
 
-    public animationScreen(File song,int character) {
+    public animationScreen(File song,int character)
+    {
         this.character = character;
         this.song = song;
         init();
@@ -60,9 +62,12 @@ public class animationScreen extends JPanel implements ActionListener {
         videoControl = new JPanel();
 
 
-        try {
+        try
+        {
             animationBox = new DrawingPanel(new AnimationBuilder(BeatDetector.ReadFile(song),character));
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             e.printStackTrace();
         }
 
@@ -88,7 +93,8 @@ public class animationScreen extends JPanel implements ActionListener {
         backButton = new JButton("Go back to Main Screen");
         playButton = new JButton(">");
                                    
-        TakeScreenShot.addActionListener(new ActionListener() {
+        TakeScreenShot.addActionListener(new ActionListener()
+        {
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -109,9 +115,11 @@ public class animationScreen extends JPanel implements ActionListener {
 
             }
         });
-        backButton.addActionListener(new ActionListener() {
+        backButton.addActionListener(new ActionListener()
+        {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e)
+            {
                 remove(mainPanel);
                 add(new MainScreen());
                 validate();
@@ -119,16 +127,20 @@ public class animationScreen extends JPanel implements ActionListener {
             }
         });
 
-        playButton.addActionListener(new ActionListener() {
+        playButton.addActionListener(new ActionListener()
+        {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e)
+            {
                 if(playButton.getText() == ">")
                 {
                     playButton.setText("||");
                     animationBox.setActive(true);
-                    try {
+                    try
+                    {
                         MusicPlayer.play(song.toURI().toURL());
-                    } catch (MalformedURLException e1) {
+                    } catch (MalformedURLException e1)
+                    {
                         e1.printStackTrace();
                     }
                     //Pause the damn animation/song
@@ -146,13 +158,15 @@ public class animationScreen extends JPanel implements ActionListener {
     }
 
     /*Takes care of all the rendering, necessary for drawing the animations*/
-    public void paint(Graphics graphics){
+    public void paint(Graphics graphics)
+    {
         super.paint(graphics);
     }
 
     /*Called every time the timer executes (every 10 millis)*/
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e)
+    {
         repaint();
     }
 

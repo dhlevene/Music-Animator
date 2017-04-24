@@ -6,38 +6,43 @@ import java.awt.*;
 import java.util.Arrays;
 import java.util.Random;
 
-public class AnimationBuilder {
+public class AnimationBuilder
+{
 
     private static final int SAMPLE_SECONDS = 3; /*Goes n seconds before and after current frame for median value*/
     private int[] beatArray; /*Stores the beats from the beat detector class*/
     private AnimationLoop currentAnimation;
     private ImageLoader imageLoader;
 
-    private int stratifyAmount; /*1/3 value between minimum BPM and max*/
+    private int _stratifyAmount; /*1/3 value between minimum BPM and max*/
     private int minBPM=Integer.MAX_VALUE;
     private int maxBPM=Integer.MIN_VALUE;
     private int currentFrame;
 
 
-    public AnimationBuilder(int[] beatArray, int character){
+    public AnimationBuilder(int[] beatArray, int character)
+    {
         this.beatArray = beatArray;
         imageLoader = new ImageLoader(character);
 
         System.out.println(Arrays.toString(beatArray));
 
         /*Find maximum and minimum values*/
-        for(int i=0;i<beatArray.length;i++){
+        for(int i=0;i<beatArray.length;i++)
+        {
             if(beatArray[i]<minBPM)
                 minBPM = beatArray[i];
             if(beatArray[i]>maxBPM)
                 maxBPM = beatArray[i];
         }
 
-        stratifyAmount = (maxBPM - minBPM) / 3;
+        _stratifyAmount = (maxBPM - minBPM) / 3;
     }
 
-    public Image getCurrentFrame(int songTime){
-        if(currentAnimation==null||currentFrame==currentAnimation.getFrameCount()){
+    public Image getCurrentFrame(int songTime)
+    {
+        if(currentAnimation==null||currentFrame==currentAnimation.getFrameCount())
+        {
             cycleAnimationLoop(songTime);
             return currentAnimation.getFrame(0);
         }
@@ -46,7 +51,8 @@ public class AnimationBuilder {
         return currentAnimation.getFrame(currentFrame-1);
     }
 
-    public void cycleAnimationLoop(int songTime){
+    public void cycleAnimationLoop(int songTime)
+    {
         int medianBPM;
         int start=songTime-SAMPLE_SECONDS;
         int end=songTime+SAMPLE_SECONDS;
@@ -66,7 +72,8 @@ public class AnimationBuilder {
         segment = new int[end - start];
         counter=0;
 
-        for(int i=start;i<end;i++){
+        for(int i=start;i<end;i++)
+        {
             segment[counter] = beatArray[i];
             counter++;
         }
@@ -83,25 +90,32 @@ public class AnimationBuilder {
 
         /*Add animationLoop logic*/
 
-        if(medianBPM<stratifyAmount+minBPM){
+        if(medianBPM<_stratifyAmount+minBPM)
+        {
             currentAnimation = imageLoader.get_slow().get(random.nextInt(imageLoader.get_slow().size()));
         }
-        else if(medianBPM<stratifyAmount*2+minBPM){
+        else if(medianBPM<_stratifyAmount*2+minBPM)
+        {
             currentAnimation = imageLoader.get_medium().get(random.nextInt(imageLoader.get_medium().size()));
         }
-        else {
+        else 
+        {
             currentAnimation = imageLoader.get_fast().get(random.nextInt(imageLoader.get_fast().size()));
         }
     }
 
     /*Bubble sort*/
-    private void bubbleSort(int[] oldArray){
+    private void bubbleSort(int[] oldArray)
+    {
 
         int temp;
 
-        for(int i=0;i<oldArray.length;i++){
-            for(int j=0;j<oldArray.length-1;j++){
-                if(oldArray[j]>oldArray[j+1]){
+        for(int i=0;i<oldArray.length;i++)
+        {
+            for(int j=0;j<oldArray.length-1;j++)
+            {
+                if(oldArray[j]>oldArray[j+1])
+                {
                     temp = oldArray[j];
                     oldArray[j] = oldArray[j+1];
                     oldArray[j+1] = temp;

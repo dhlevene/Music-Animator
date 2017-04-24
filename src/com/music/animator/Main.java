@@ -10,9 +10,11 @@ package com.music.animator;
 import javax.swing.*;
 
 /*Last edit by Damian Suski, 3/19/2017 Added JFrame*/
-public class Main {
+public class Main
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         JFrame window = new JFrame("Animator");
 
         /*Following code is used to get screen resolution. Probably unnecessary*/

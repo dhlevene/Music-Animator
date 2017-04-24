@@ -15,10 +15,13 @@ public class MusicPlayer {
     private static Clip _clip;
     private static boolean _clipLoaded;
 
-    public static void play(URL url) {
+    public static void play(URL url)
+    {
 
-        if (!_clipLoaded) {
-            try {
+        if (!_clipLoaded)
+        {
+            try
+            {
                // AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(url.getPath()));
                 //URL url = MusicPlayer.class.getResource(fileName);
                 System.out.println("Url:" + url );
@@ -28,22 +31,28 @@ public class MusicPlayer {
                 _clip.open(audioInputStream);
                 _clip.loop(Clip.LOOP_CONTINUOUSLY);
                 _clipLoaded = true;
-            } catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 System.out.println("Error with playing sound.");
                 ex.printStackTrace();
             }
-        } else { //song was paused and will resume
+        }
+        else
+        { //song was paused and will resume
             _clip.setMicrosecondPosition(_clipTime);
             _clip.start();
         }
     }
 
-    public static void pause() {
+    public static void pause()
+    {
         _clipTime= _clip.getMicrosecondPosition();
         _clip.stop();
     }
 
-    public static void stop(){
+    public static void stop()
+    {
         _clip.stop();
         _clip = null;
         _clipLoaded = false;

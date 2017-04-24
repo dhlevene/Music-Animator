@@ -3,28 +3,31 @@ package com.music.animator;
 import java.awt.*;
 import java.util.ArrayList;
 
-/**
- * Created by Immortan on 3/26/2017.
- */
-public class AnimationLoop {
 
-    private int frameCount=0;
+public class AnimationLoop
+{
+
+    private int _frameCount=0;
     private ArrayList<Image> frames;
 
-    public AnimationLoop(){
+    public AnimationLoop()
+    {
         frames = new ArrayList<>();
     }
 
-    public void addFrame(Image image){
+    public void addFrame(Image image)
+    {
         frames.add(image);
-        frameCount++;
+        _frameCount++;
     }
 
-    public int getFrameCount(){
-        return frameCount;
+    public int getFrameCount()
+    {
+        return _frameCount;
     }
 
-    public Image getFrame(int frameNumber){
+    public Image getFrame(int frameNumber)
+    {
         return frames.get(frameNumber);
     }
 }
