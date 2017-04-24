@@ -13,7 +13,7 @@ import java.net.MalformedURLException;
 
 
 /**
- * Created by mende on 3/26/2017.
+ * Created by Mauricio on 3/26/2017.
  */
 /*
     This class is meant to be used as a Panel inside a new frame that only manages the screenShot and if it would like

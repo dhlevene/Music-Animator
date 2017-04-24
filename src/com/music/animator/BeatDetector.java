@@ -6,6 +6,9 @@ import javax.sound.sampled.AudioFormat.*;
 import java.nio.*;
 import org.jtransforms.fft.DoubleFFT_1D;
 
+/**
+ * Created by anthony on 4/16/2017.
+ */
 public class BeatDetector
 {
         public static int[] ReadFile(File file) throws UnsupportedAudioFileException, IOException,InterruptedException

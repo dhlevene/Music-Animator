@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Created by Immortan on 4/16/2017.
+ * Created by anthony on 4/16/2017.
  */
 public class DrawingPanel extends JPanel implements ActionListener
 {
